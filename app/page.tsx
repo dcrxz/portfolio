@@ -68,7 +68,7 @@ export default function Portfolio() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative p-1 rounded-2xl bg-gradient-to-br from-cyan-400 to-transparent shadow-2xl shadow-cyan-400/20">
               <Image
-                src="/humanity-business.jpg" 
+                src="./humanity-business.jpg" 
                 alt="Bringing Humanity to Business"
                 width={400}
                 height={400}
