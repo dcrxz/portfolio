@@ -203,12 +203,12 @@ export default function Portfolio() {
                 rel="noopener noreferrer"
                 className="bg-cyan-400 text-black px-8 py-4 rounded-full font-bold flex items-center gap-3 hover:bg-white transition-all"
               >
-                Book a Consultation <ArrowRight size={20} />
+                Book a Time <ArrowRight size={20} />
               </a>
               
               {/* Clear Resume Link - Pointed to Public Root */}
               <a 
-                href="./Darwin Cruz_Resume_04282026.pdf" 
+                href="./Darwin Cruz_Resume.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-bold uppercase tracking-widest text-xs underline underline-offset-8 decoration-cyan-400 decoration-2 hover:text-cyan-400 transition-all"
