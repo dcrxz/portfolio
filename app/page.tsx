@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import ScrollSidebar from '@/components/ScrollSidebar';
 import { 
   Award, 
   Layers, 
@@ -17,6 +18,18 @@ const LinkedInIcon = ({ size = 20 }) => (
     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>
   </svg>
 );
+
+export default function Home() {
+  return (
+    <main className="relative">
+      <ScrollSidebar />
+      <section id="hero" className="min-h-screen"> ... </section>
+      <section id="about" className="min-h-screen"> ... </section>
+      <section id="metrics" className="min-h-screen"> ... </section>
+      {/* etc... */}
+    </main>
+  );
+}
 
 export default function Portfolio() {
   return (
@@ -64,7 +77,7 @@ export default function Portfolio() {
                   width={600}
                   height={600}
                   unoptimized={true} 
-                  className="rounded-xl border-2 border-white/10"
+                  className="rounded-xl border-2 border-white/10 max-w-full h-auto"
                 />
               </div>
             </div>
