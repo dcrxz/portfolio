@@ -24,10 +24,6 @@ const LinkedInIcon = ({ size = 20 }) => (
 export default function Portfolio() {
   return (
     <div className="min-h-screen selection:bg-cyan-500/30 bg-[#111827]">
-      {/* 
-          The ScrollSidebar uses reactive icons to prevent overlap.
-          Linked IDs: hero, about, case-studies, demos, work-with-me
-      */}
       <ScrollSidebar />
 
       {/* Navigation */}
@@ -47,7 +43,6 @@ export default function Portfolio() {
       {/* Hero Section */}
       <header id="hero" className="pt-40 pb-24 min-h-screen flex items-center">
         <div className="max-w-7xl mx-auto px-6 lg:px-24 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-          
           <div className="space-y-8">
             <div className="badge inline-block bg-cyan-600/10 text-cyan-400 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
               Brandon Hall Excellence Award Contributor
@@ -85,7 +80,6 @@ export default function Portfolio() {
       </header>
 
       <main className="max-w-7xl mx-auto space-y-40 pb-40 px-6 lg:px-24">
-        
         {/* About Section */}
         <section id="about" className="py-20 border-t border-gray-800">
           <div className="max-w-3xl">
@@ -96,7 +90,6 @@ export default function Portfolio() {
               Lead Specialist at Teletech Inc., merging DOST scholarship background in IT with a strategic mindset to pilot <span className="font-semibold text-white">agentic AI systems</span>. Driven by the mission of bringing human insight to automated business solutions.
             </p>
           </div>
-          
           <div id="metrics" className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12">
             <div className="flex items-center gap-4 bg-gray-900/50 p-5 rounded-lg border border-gray-800">
               <div className="p-3 bg-cyan-400/10 rounded-full text-cyan-400">
@@ -107,7 +100,6 @@ export default function Portfolio() {
                 <p className="text-sm text-gray-400">Annual ROI from Pilot</p>
               </div>
             </div>
-            
             <div className="flex items-center gap-4 bg-gray-900/50 p-5 rounded-lg border border-gray-800">
               <div className="p-3 bg-cyan-400/10 rounded-full text-cyan-400">
                 <Zap className="w-7 h-7" />
@@ -188,7 +180,7 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Work With Me - Updated with Appointment and Resume links */}
+        {/* Work With Me */}
         <section id="work-with-me" className="py-32 bg-gray-900 rounded-[3rem] text-white text-center relative overflow-hidden shadow-2xl border border-gray-800">
           <div className="relative z-10 max-w-4xl mx-auto px-8">
             <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8">Work With Me.</h2>
@@ -196,7 +188,6 @@ export default function Portfolio() {
               Available for strategic consulting, AI architecture for L&D, and digital transformation initiatives.
             </p>
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-              {/* Google Calendar Appointment Scheduler */}
               <a 
                 href="https://calendar.app.google/Ut4P1zYP4gpuJL7Y9" 
                 target="_blank" 
@@ -205,10 +196,8 @@ export default function Portfolio() {
               >
                 Book a Time <ArrowRight size={20} />
               </a>
-              
-              {/* Clear Resume Link - Pointed to Public Root */}
               <a 
-                href="./Darwin Cruz_Resume.pdf" 
+                href="./Darwin_Cruz_Resume.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-bold uppercase tracking-widest text-xs underline underline-offset-8 decoration-cyan-400 decoration-2 hover:text-cyan-400 transition-all"
