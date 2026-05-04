@@ -24,6 +24,10 @@ const LinkedInIcon = ({ size = 20 }) => (
 export default function Portfolio() {
   return (
     <div className="min-h-screen selection:bg-cyan-500/30 bg-[#111827]">
+      {/* 
+          The ScrollSidebar uses reactive icons to prevent overlap.
+          Linked IDs: hero, about, case-studies, demos, work-with-me
+      */}
       <ScrollSidebar />
 
       {/* Navigation */}
@@ -57,7 +61,7 @@ export default function Portfolio() {
             </div>
             <div className="flex flex-wrap gap-8 items-center text-slate-400">
               <div className="flex items-center gap-2 border-r border-slate-700 pr-8 font-bold text-xs uppercase tracking-tighter">
-                <GraduationCap size={20} className="text-cyan-600" /> BS IT | DOST Scholar
+                <GraduationCap size={20} className="text-cyan-600" /> BS IT | DOST Scholar at CIT-U
               </div>
               <a href="https://www.linkedin.com/in/cruzde/" className="flex items-center gap-2 text-cyan-600 font-bold text-xs uppercase tracking-widest hover:text-cyan-400 transition-colors">
                 <LinkedInIcon /> linkedin.com/in/cruzde/
@@ -184,7 +188,7 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Work With Me */}
+        {/* Work With Me - Updated with Appointment and Resume links */}
         <section id="work-with-me" className="py-32 bg-gray-900 rounded-[3rem] text-white text-center relative overflow-hidden shadow-2xl border border-gray-800">
           <div className="relative z-10 max-w-4xl mx-auto px-8">
             <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8">Work With Me.</h2>
@@ -192,11 +196,24 @@ export default function Portfolio() {
               Available for strategic consulting, AI architecture for L&D, and digital transformation initiatives.
             </p>
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-              <a href="mailto:zurcdtsenre@gmail.com" className="bg-cyan-400 text-black px-8 py-4 rounded-full font-bold flex items-center gap-3 hover:bg-white transition-all">
-                Start a Conversation <ArrowRight size={20} />
+              {/* Google Calendar Appointment Scheduler */}
+              <a 
+                href="https://calendar.app.google/Ut4P1zYP4gpuJL7Y9" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-cyan-400 text-black px-8 py-4 rounded-full font-bold flex items-center gap-3 hover:bg-white transition-all"
+              >
+                Book a Consultation <ArrowRight size={20} />
               </a>
-              <a href="/Darwin Cruz_Resume_04282026.pdf" download className="font-bold uppercase tracking-widest text-xs underline underline-offset-8 decoration-cyan-400 decoration-2 hover:text-cyan-400 transition-all">
-                Download Full Dossier
+              
+              {/* Clear Resume Link - Pointed to Public Root */}
+              <a 
+                href="./Darwin Cruz_Resume_04282026.pdf" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold uppercase tracking-widest text-xs underline underline-offset-8 decoration-cyan-400 decoration-2 hover:text-cyan-400 transition-all"
+              >
+                View Full Resume
               </a>
             </div>
           </div>
@@ -204,7 +221,7 @@ export default function Portfolio() {
       </main>
 
       <footer className="max-w-7xl mx-auto pb-24 px-6 lg:px-24 flex flex-col md:flex-row justify-between items-center gap-12 border-t border-gray-800 pt-24 text-[10px] font-bold uppercase tracking-[0.4em] text-slate-500">
-        <div className="text-2xl tracking-tighter text-white font-black">Darwin Cruz.</div>
+        <div className="text-2xl tracking-tighter text-white font-black">Darwin Ernest Cruz.</div>
         <div className="flex gap-10">
           <a href="https://www.linkedin.com/in/cruzde/" className="hover:text-cyan-400 flex items-center gap-3 transition-colors">
             <LinkedInIcon /> LinkedIn
