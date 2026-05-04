@@ -16,11 +16,11 @@ const LinkedInIcon = ({ size = 20 }) => (
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-300 selection:bg-cyan-500/30 font-sans">
-      <nav className="fixed top-0 w-full z-50 glass-panel h-20 flex items-center border-b border-slate-100">
+    <div className="min-h-screen selection:bg-cyan-500/30">
+      <nav className="fixed top-0 w-full z-50 glass-panel h-20 flex items-center">
         <div className="content-container w-full flex justify-between items-center text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">
-          <div className="font-black tracking-tighter text-xl text-slate-900 uppercase">Darwin Ernest Cruz.</div>
-          <div className="hidden md:flex gap-10">
+          <div className="font-black tracking-tighter text-xl text-white uppercase">Darwin Ernest Cruz.</div>
+          <div className="hidden md:flex gap-10 items-center">
             <a href="#what-i-do" className="hover:text-cyan-600 transition-colors">Strategy</a>
             <a href="#case-studies" className="hover:text-cyan-600 transition-colors">Cases</a>
             <a href="#expertise" className="hover:text-cyan-600 transition-colors">Expertise</a>
@@ -31,11 +31,11 @@ export default function Portfolio() {
 
       <header className="pt-48 pb-24 content-container">
         <div className="badge mb-8 inline-block">Brandon Hall Excellence Award Contributor</div>
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-12 max-w-5xl text-slate-900">
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-12 max-w-5xl text-white">
           Architecting AI-driven learning ecosystems where <span className="text-gradient-cyan">Learning Science leads.</span>
         </h1>
         <div className="mb-12">
-          <h2 className="text-3xl font-bold tracking-tight text-slate-800">Darwin Cruz</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-slate-100">Darwin Cruz</h2>
           <p className="text-xl text-slate-500 font-medium tracking-tight">Lead Specialist in Learning Innovation & Technology</p>
         </div>
         <div className="flex flex-wrap gap-8 items-center text-slate-400">
@@ -52,12 +52,12 @@ export default function Portfolio() {
         <section id="what-i-do">
           <h2 className="section-header">What I Do</h2>
           <div className="grid md:grid-cols-2 gap-16">
-            <p className="text-3xl font-bold leading-tight text-slate-800">
+            <p className="text-3xl font-bold leading-tight text-slate-100">
               Specializing in the digital transformation of enterprise L&D.
             </p>
             <div className="space-y-8 text-lg text-slate-500 leading-relaxed">
               <p>I architect AI-driven ecosystems and manage mission-critical platform migrations to eliminate operational friction and drive measurable ROI.</p>
-              <div className="flex gap-12 text-5xl font-bold text-slate-900">
+              <div className="flex gap-12 text-5xl font-bold text-white">
                 <div>600% <span className="block text-[10px] text-slate-400 uppercase tracking-widest mt-2">Scale Growth</span></div>
                 <div>$35K+ <span className="block text-[10px] text-slate-400 uppercase tracking-widest mt-2">Annual ROI</span></div>
               </div>
@@ -174,7 +174,7 @@ export default function Portfolio() {
       </main>
 
       <footer className="content-container pb-24 flex flex-col md:flex-row justify-between items-center gap-12 border-t border-slate-100 pt-24 text-[10px] font-bold uppercase tracking-[0.4em] text-slate-400">
-        <div className="text-2xl tracking-tighter text-slate-900 font-black">Darwin Cruz.</div>
+        <div className="text-2xl tracking-tighter text-white font-black">Darwin Cruz.</div>
         <div className="flex gap-10">
           <a href="https://www.linkedin.com/in/cruzde/" className="hover:text-cyan-600 flex items-center gap-3 transition-colors underline decoration-slate-200">
             <LinkedInIcon /> LinkedIn
