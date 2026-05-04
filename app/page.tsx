@@ -22,12 +22,6 @@ const LinkedInIcon = ({ size = 24 }) => (
   </svg>
 );
 
-const GithubIcon = ({ size = 24 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.28 1.15-.28 2.35 0 3.5-.73 1.02-1.08 2.25-1 3.5 0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/>
-  </svg>
-);
-
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-300 font-sans selection:bg-cyan-500/30">
@@ -41,7 +35,7 @@ export default function Portfolio() {
         </div>
       </nav>
 
-      {/* Hero Section: Philosophy First */}
+      {/* Hero Section: Philosophy & Identity */}
       <header className="max-w-6xl mx-auto py-24 px-8">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/30 border border-cyan-800 text-cyan-400 text-[10px] font-black uppercase tracking-[0.2em] mb-8">
           <Award size={14} /> Brandon Hall Excellence Award Contributor
@@ -52,8 +46,8 @@ export default function Portfolio() {
         </h1>
 
         <div className="flex flex-col gap-2 mb-12">
-          <h2 className="text-2xl font-semibold text-slate-100 tracking-tight">Darwin Cruz</h2>
-          <p className="text-lg text-slate-400 font-medium">Lead Specialist in Learning Innovation & Technology</p>
+          <h2 className="text-2xl font-semibold text-slate-100 tracking-tight text-slate-400">Darwin Cruz</h2>
+          <p className="text-lg text-slate-500 font-medium">Lead Specialist in Learning Innovation & Technology</p>
         </div>
 
         <div className="flex flex-wrap items-center gap-6 text-slate-400">
@@ -94,17 +88,17 @@ export default function Portfolio() {
           <div className="p-8 bg-slate-900/20 border border-slate-900 rounded-2xl group hover:border-blue-500/30 transition-all">
             <ShieldCheck className="text-blue-500 mb-4 group-hover:scale-110 transition-transform" size={28} />
             <h3 className="text-white font-bold mb-2 uppercase text-xs tracking-wider">Governance & Compliance</h3>
-            <p className="text-[11px] text-slate-500 leading-relaxed uppercase tracking-tighter">Managed enterprise platform migration with 100% security compliance and role-based provisioning.</p>
+            <p className="text-[11px] text-slate-500 leading-relaxed uppercase tracking-tighter">Enterprise platform migration with 100% security compliance and role-based provisioning.</p>
           </div>
           <div className="p-8 bg-slate-900/20 border border-slate-900 rounded-2xl group hover:border-cyan-500/30 transition-all">
             <Users className="text-cyan-500 mb-4 group-hover:scale-110 transition-transform" size={28} />
             <h3 className="text-white font-bold mb-2 uppercase text-xs tracking-wider">Leadership & Upskilling</h3>
-            <p className="text-[11px] text-slate-500 leading-relaxed uppercase tracking-tighter">Launched LXD upskill programs for GenAI conversation design, scaling innovation readiness.</p>
+            <p className="text-[11px] text-slate-500 leading-relaxed uppercase tracking-tighter">LXD upskill programs for GenAI conversation design, scaling innovation readiness across cross-functional teams.</p>
           </div>
           <div className="p-8 bg-slate-900/20 border border-slate-900 rounded-2xl group hover:border-purple-500/30 transition-all">
             <Zap className="text-purple-500 mb-4 group-hover:scale-110 transition-transform" size={28} />
             <h3 className="text-white font-bold mb-2 uppercase text-xs tracking-wider">Executive Narratives</h3>
-            <p className="text-[11px] text-slate-500 leading-relaxed uppercase tracking-tighter">Developed Lean Business Cases (LBC) to secure stakeholder buy-in and ROI validation.</p>
+            <p className="text-[11px] text-slate-500 leading-relaxed uppercase tracking-tighter">Development of Lean Business Cases (LBC) to secure stakeholder buy-in and ROI validation.</p>
           </div>
         </div>
       </section>
@@ -123,7 +117,7 @@ export default function Portfolio() {
           <div className="bg-slate-900/60 border border-slate-800 rounded-[2.5rem] p-10 hover:border-purple-500/20 transition-all">
             <Database className="text-purple-400 mb-6" size={32} />
             <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">GenAI Learning Systems</h3>
-            <p className="text-slate-400 text-sm leading-relaxed mb-6">Architected scalable bot frameworks and 3-tier difficulty models, reducing the instructional design lifecycle by 300%.</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-6">Architected scalable bot frameworks and 3-tier difficulty models, reducing the discovery phase of the ID lifecycle by 300%.</p>
             <div className="flex gap-4 text-[9px] font-black uppercase text-slate-600 tracking-widest">
                <span>#GENAI</span> <span>#LX_DESIGN</span>
             </div>
@@ -139,7 +133,7 @@ export default function Portfolio() {
             <div>
               <h3 className="text-3xl font-bold text-white mb-6 tracking-tight italic">Performance Outside the Lab</h3>
               <p className="text-slate-400 text-sm leading-relaxed mb-8">
-                I apply the same optimization logic to my physical pursuits. Outside of architecting learning systems, I focus on metabolic efficiency and peak endurance.
+                I believe disciplined physical performance fuels cognitive innovation. Outside of architecting learning systems, I apply the same optimization logic to metabolic efficiency and peak endurance.
               </p>
               <div className="flex gap-4">
                 <div className="flex flex-col p-4 bg-slate-950 border border-slate-800 rounded-2xl w-36 hover:border-orange-500/30 transition-colors">
@@ -152,7 +146,7 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-            <div className="hidden md:flex justify-center opacity-20 group-hover:opacity-40 transition-opacity">
+            <div className="hidden md:flex justify-center opacity-10 group-hover:opacity-20 transition-opacity">
               <Layers size={220} />
             </div>
           </div>
