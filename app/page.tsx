@@ -1,11 +1,15 @@
 import React from 'react';
+import Image from 'next/image';
 import { 
   Award, 
   Layers, 
   GraduationCap, 
   ArrowRight, 
   Workflow, 
-  MessageSquare 
+  MessageSquare,
+  Mail,
+  Briefcase,
+  Zap
 } from 'lucide-react';
 
 const LinkedInIcon = ({ size = 20 }) => (
@@ -49,18 +53,60 @@ export default function Portfolio() {
       </header>
 
       <main className="content-container space-y-40 pb-40">
-        <section id="what-i-do">
-          <h2 className="section-header">What I Do</h2>
-          <div className="grid md:grid-cols-2 gap-16">
-            <p className="text-3xl font-bold leading-tight text-slate-100">
-              Specializing in the digital transformation of enterprise L&D.
-            </p>
-            <div className="space-y-8 text-lg text-slate-500 leading-relaxed">
-              <p>I architect AI-driven ecosystems and manage mission-critical platform migrations to eliminate operational friction and drive measurable ROI.</p>
-              <div className="flex gap-12 text-5xl font-bold text-white">
-                <div>600% <span className="block text-[10px] text-slate-400 uppercase tracking-widest mt-2">Scale Growth</span></div>
-                <div>$35K+ <span className="block text-[10px] text-slate-400 uppercase tracking-widest mt-2">Annual ROI</span></div>
+        <section id="what-i-do" className="flex items-center text-white">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            {/* -- Left Side: Image with professional border & shadows -- */}
+            <div className="flex justify-center order-2 md:order-1">
+              <div className="relative p-2 rounded-2xl bg-gradient-to-br from-[#00b4d8] to-[#111827] shadow-2xl shadow-[#00b4d8]/20">
+                <Image
+                  src="/bring humanity to business.jpg"
+                  alt="Portrait showing innovation mindset"
+                  width={600}
+                  height={600}
+                  unoptimized={true} 
+                  className="rounded-xl border-2 border-white/10"
+                />
               </div>
+            </div>
+
+            {/* -- Right Side: Text balancing professional metrics -- */}
+            <div className="space-y-8 order-1 md:order-2">
+              <div className="space-y-4">
+                <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight">
+                  Leading <span className="text-[#00b4d8]">Learning Innovation</span>
+                </h2>
+                <p className="text-xl text-gray-300 leading-relaxed">
+                  Lead Specialist at Teletech Inc., merging DOST scholarship background in IT with a strategic mindset to pilot <span className="font-semibold text-white">agentic AI systems</span>. Driven by the mission of bringing human insight to automated business solutions.
+                </p>
+              </div>
+
+              {/* Key Metrics / Highlights */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="flex items-center gap-4 bg-gray-900/50 p-5 rounded-lg border border-gray-800">
+                  <div className="p-3 bg-[#00b4d8]/10 rounded-full text-[#00b4d8]">
+                    <Briefcase className="w-7 h-7" />
+                  </div>
+                  <div>
+                    <p className="text-3xl font-bold text-white">$35K+</p>
+                    <p className="text-sm text-gray-400">Annual ROI from Pilot</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-4 bg-gray-900/50 p-5 rounded-lg border border-gray-800">
+                  <div className="p-3 bg-[#00b4d8]/10 rounded-full text-[#00b4d8]">
+                    <Zap className="w-7 h-7" />
+                  </div>
+                  <div>
+                    <p className="text-3xl font-bold text-white">600%</p>
+                    <p className="text-sm text-gray-400">Growth in Bot Production</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="mailto:zurcdtsenre@gmail.com" className="inline-flex items-center gap-3 px-8 py-4 bg-[#00b4d8] text-[#111827] font-bold rounded-lg hover:bg-white transition-all text-lg">
+                <Mail className="w-5 h-5" />
+                Connect & Iterate
+              </a>
             </div>
           </div>
         </section>
