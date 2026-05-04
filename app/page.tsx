@@ -16,7 +16,7 @@ const LinkedInIcon = ({ size = 20 }) => (
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-white text-slate-900 selection:bg-cyan-100 font-sans">
+    <div className="min-h-screen bg-slate-950 text-slate-300 selection:bg-cyan-500/30 font-sans">
       <nav className="fixed top-0 w-full z-50 glass-panel h-20 flex items-center border-b border-slate-100">
         <div className="content-container w-full flex justify-between items-center text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">
           <div className="font-black tracking-tighter text-xl text-slate-900 uppercase">Darwin Ernest Cruz.</div>

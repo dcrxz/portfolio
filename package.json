@@ -10,7 +10,7 @@
     "deploy": "npm run build && git add . && git commit -m 'Portfolio Update' && git push origin main"
   },
   "dependencies": {
-    "next": "15.0.0",
+    "next": "latest",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "lucide-react": "latest"
