@@ -19,7 +19,7 @@ export default function Portfolio() {
     <div className="min-h-screen bg-white text-slate-900 selection:bg-cyan-100 font-sans">
       <nav className="fixed top-0 w-full z-50 glass-panel h-20 flex items-center border-b border-slate-100">
         <div className="content-container w-full flex justify-between items-center text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">
-          <div className="font-black tracking-tighter text-xl text-slate-900 uppercase">DC.</div>
+          <div className="font-black tracking-tighter text-xl text-slate-900 uppercase">Darwin Ernest Cruz.</div>
           <div className="hidden md:flex gap-10">
             <a href="#what-i-do" className="hover:text-cyan-600 transition-colors">Strategy</a>
             <a href="#case-studies" className="hover:text-cyan-600 transition-colors">Cases</a>
