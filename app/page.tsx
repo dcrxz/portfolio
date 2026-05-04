@@ -44,22 +44,22 @@ export default function Portfolio() {
       {/* Hero Section: Philosophy First */}
       <header className="max-w-6xl mx-auto py-24 px-8">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/30 border border-cyan-800 text-cyan-400 text-[10px] font-black uppercase tracking-[0.2em] mb-8">
-          <Award size={14} /> Brandon Hall Excellence Award Contributor[cite: 1]
+          <Award size={14} /> Brandon Hall Excellence Award Contributor
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-10 leading-[1.1] max-w-5xl">
-          Architecting AI-driven learning ecosystems where <span className="text-cyan-400 text-glow-cyan">Learning Science leads.</span>[cite: 1]
+          Architecting AI-driven learning ecosystems where <span className="text-cyan-400 text-glow-cyan">Learning Science leads.</span>
         </h1>
 
         <div className="flex flex-col gap-2 mb-12">
           <h2 className="text-2xl font-semibold text-slate-100 tracking-tight">Darwin Cruz</h2>
-          <p className="text-lg text-slate-400 font-medium">Lead Specialist in Learning Innovation & Technology[cite: 1]</p>
+          <p className="text-lg text-slate-400 font-medium">Lead Specialist in Learning Innovation & Technology</p>
         </div>
 
         <div className="flex flex-wrap items-center gap-6 text-slate-400">
           <div className="flex items-center gap-2 border-r border-slate-800 pr-6">
             <GraduationCap size={18} className="text-cyan-500" />
-            <span className="text-xs font-mono uppercase tracking-tighter">BS IT | DOST Scholar[cite: 1]</span>
+            <span className="text-xs font-mono uppercase tracking-tighter">BS IT | DOST Scholar</span>
           </div>
           <a href="https://www.linkedin.com/in/cruzde/" className="group flex items-center gap-2 text-cyan-500 hover:text-white transition-all text-xs font-black uppercase tracking-widest underline decoration-cyan-500/30 underline-offset-4">
             <LinkedInIcon size={16} />
@@ -79,7 +79,7 @@ export default function Portfolio() {
             { label: 'ID Lifecycle', val: '-300%', desc: 'Acceleration' }
           ].map((s, i) => (
             <div key={i} className="p-8 bg-slate-900/40 border border-slate-800 rounded-3xl hover:bg-slate-900/60 transition-colors">
-              <div className="text-4xl font-bold text-white mb-2">{s.val}[cite: 1]</div>
+              <div className="text-4xl font-bold text-white mb-2">{s.val}</div>
               <div className="text-[10px] uppercase tracking-widest text-cyan-500 font-black mb-1">{s.label}</div>
               <div className="text-[10px] text-slate-500 font-medium">{s.desc}</div>
             </div>
@@ -94,17 +94,17 @@ export default function Portfolio() {
           <div className="p-8 bg-slate-900/20 border border-slate-900 rounded-2xl group hover:border-blue-500/30 transition-all">
             <ShieldCheck className="text-blue-500 mb-4 group-hover:scale-110 transition-transform" size={28} />
             <h3 className="text-white font-bold mb-2 uppercase text-xs tracking-wider">Governance & Compliance</h3>
-            <p className="text-[11px] text-slate-500 leading-relaxed uppercase tracking-tighter">Managed enterprise platform migration with 100% security compliance and role-based provisioning.[cite: 1]</p>
+            <p className="text-[11px] text-slate-500 leading-relaxed uppercase tracking-tighter">Managed enterprise platform migration with 100% security compliance and role-based provisioning.</p>
           </div>
           <div className="p-8 bg-slate-900/20 border border-slate-900 rounded-2xl group hover:border-cyan-500/30 transition-all">
             <Users className="text-cyan-500 mb-4 group-hover:scale-110 transition-transform" size={28} />
             <h3 className="text-white font-bold mb-2 uppercase text-xs tracking-wider">Leadership & Upskilling</h3>
-            <p className="text-[11px] text-slate-500 leading-relaxed uppercase tracking-tighter">Launched LXD upskill programs for GenAI conversation design, scaling innovation readiness.[cite: 1]</p>
+            <p className="text-[11px] text-slate-500 leading-relaxed uppercase tracking-tighter">Launched LXD upskill programs for GenAI conversation design, scaling innovation readiness.</p>
           </div>
           <div className="p-8 bg-slate-900/20 border border-slate-900 rounded-2xl group hover:border-purple-500/30 transition-all">
             <Zap className="text-purple-500 mb-4 group-hover:scale-110 transition-transform" size={28} />
             <h3 className="text-white font-bold mb-2 uppercase text-xs tracking-wider">Executive Narratives</h3>
-            <p className="text-[11px] text-slate-500 leading-relaxed uppercase tracking-tighter">Developed Lean Business Cases (LBC) to secure stakeholder buy-in and ROI validation.[cite: 1]</p>
+            <p className="text-[11px] text-slate-500 leading-relaxed uppercase tracking-tighter">Developed Lean Business Cases (LBC) to secure stakeholder buy-in and ROI validation.</p>
           </div>
         </div>
       </section>
@@ -115,7 +115,7 @@ export default function Portfolio() {
           <div className="bg-slate-900/60 border border-slate-800 rounded-[2.5rem] p-10 hover:border-cyan-500/20 transition-all">
             <Cpu className="text-cyan-400 mb-6" size={32} />
             <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">API Workflow Engineering</h3>
-            <p className="text-slate-400 text-sm leading-relaxed mb-6">Engineered custom 3-step API integrations eliminating 90% of manual entry errors and increasing coaching frequency by 111%.[cite: 1]</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-6">Engineered custom 3-step API integrations eliminating 90% of manual entry errors and increasing coaching frequency by 111%.</p>
             <div className="flex gap-4 text-[9px] font-black uppercase text-slate-600 tracking-widest">
                <span>#API_ARCH</span> <span>#AUTOMATION</span>
             </div>
@@ -123,7 +123,7 @@ export default function Portfolio() {
           <div className="bg-slate-900/60 border border-slate-800 rounded-[2.5rem] p-10 hover:border-purple-500/20 transition-all">
             <Database className="text-purple-400 mb-6" size={32} />
             <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">GenAI Learning Systems</h3>
-            <p className="text-slate-400 text-sm leading-relaxed mb-6">Architected scalable bot frameworks and 3-tier difficulty models, reducing the instructional design lifecycle by 300%.[cite: 1]</p>
+            <p className="text-slate-400 text-sm leading-relaxed mb-6">Architected scalable bot frameworks and 3-tier difficulty models, reducing the instructional design lifecycle by 300%.</p>
             <div className="flex gap-4 text-[9px] font-black uppercase text-slate-600 tracking-widest">
                <span>#GENAI</span> <span>#LX_DESIGN</span>
             </div>
@@ -139,16 +139,16 @@ export default function Portfolio() {
             <div>
               <h3 className="text-3xl font-bold text-white mb-6 tracking-tight italic">Performance Outside the Lab</h3>
               <p className="text-slate-400 text-sm leading-relaxed mb-8">
-                I apply the same optimization logic to my physical pursuits. Outside of architecting learning systems, I focus on metabolic efficiency and peak endurance.[cite: 1]
+                I apply the same optimization logic to my physical pursuits. Outside of architecting learning systems, I focus on metabolic efficiency and peak endurance.
               </p>
               <div className="flex gap-4">
                 <div className="flex flex-col p-4 bg-slate-950 border border-slate-800 rounded-2xl w-36 hover:border-orange-500/30 transition-colors">
                   <Timer className="text-orange-500 mb-2" size={20} />
-                  <span className="text-[10px] font-black uppercase text-slate-500">Sub-20 5K Quest[cite: 1]</span>
+                  <span className="text-[10px] font-black uppercase text-slate-500">Sub-20 5K Quest</span>
                 </div>
                 <div className="flex flex-col p-4 bg-slate-950 border border-slate-800 rounded-2xl w-36 hover:border-blue-500/30 transition-colors">
                   <Bike className="text-blue-500 mb-2" size={20} />
-                  <span className="text-[10px] font-black uppercase text-slate-500">Tabuelan Tri[cite: 1]</span>
+                  <span className="text-[10px] font-black uppercase text-slate-500">Tabuelan Tri</span>
                 </div>
               </div>
             </div>
@@ -165,10 +165,6 @@ export default function Portfolio() {
           <a href="https://www.linkedin.com/in/cruzde/" className="text-slate-500 hover:text-cyan-500 flex flex-col items-center gap-2 group transition-colors">
             <LinkedInIcon size={24}/>
             <span className="text-[10px] font-black uppercase tracking-widest opacity-50 group-hover:opacity-100">LinkedIn</span>
-          </a>
-          <a href="https://github.com/dcrxz" className="text-slate-500 hover:text-white flex flex-col items-center gap-2 group transition-colors">
-            <GithubIcon size={24}/>
-            <span className="text-[10px] font-black uppercase tracking-widest opacity-50 group-hover:opacity-100">GitHub</span>
           </a>
           <a 
             href="/Darwin Cruz_Resume_04282026.pdf" 
