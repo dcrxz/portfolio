@@ -151,7 +151,7 @@ export default function Portfolio() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#6bebff' }} />
-                  <span style={{ fontFamily: 'monospace', fontSize: '0.75rem', color: '#6bebff', tracking: '0.1em' }}>01 / INGESTION</span>
+                  <span style={{ fontFamily: 'monospace', fontSize: '0.75rem', color: '#6bebff', letterSpacing: '0.1em' }}>01 / INGESTION</span>
                 </div>
                 <h3 style={{ fontWeight: 'bold', color: '#F5F5F5', fontSize: '1.125rem', margin: 0 }}>The Grabber Module</h3>
                 <p style={{ fontSize: '0.875rem', color: '#a3a3a3', lineHeight: '1.6', margin: 0 }}>
@@ -176,7 +176,7 @@ export default function Portfolio() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#578cd6' }} />
-                  <span style={{ fontFamily: 'monospace', fontSize: '0.75rem', color: '#578cd6', tracking: '0.1em' }}>02 / PROCESSING</span>
+                  <span style={{ fontFamily: 'monospace', fontSize: '0.75rem', color: '#578cd6', letterSpacing: '0.1em' }}>02 / PROCESSING</span>
                 </div>
                 <h3 style={{ fontWeight: 'bold', color: '#F5F5F5', fontSize: '1.125rem', margin: 0 }}>The Context Brain</h3>
                 <p style={{ fontSize: '0.875rem', color: '#a3a3a3', lineHeight: '1.6', margin: 0 }}>
@@ -201,7 +201,7 @@ export default function Portfolio() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#f9cefb' }} />
-                  <span style={{ fontFamily: 'monospace', fontSize: '0.75rem', color: '#f9cefb', tracking: '0.1em' }}>03 / COMPILATION</span>
+                  <span style={{ fontFamily: 'monospace', fontSize: '0.75rem', color: '#f9cefb', letterSpacing: '0.1em' }}>03 / COMPILATION</span>
                 </div>
                 <h3 style={{ fontWeight: 'bold', color: '#F5F5F5', fontSize: '1.125rem', margin: 0 }}>The Production Factory</h3>
                 <p style={{ fontSize: '0.875rem', color: '#a3a3a3', lineHeight: '1.6', margin: 0 }}>
