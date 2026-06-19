@@ -7,7 +7,6 @@ export default function Portfolio() {
       {/* ──────────────────────────────────────────────────────── */}
       {/* GLOBAL HEADER PANEL: SOLID & FIXED CEILING BOUNDARY      */}
       {/* ──────────────────────────────────────────────────────── */}
-      {/* Sizing Tweak: h-[40px] enforces a hard 1cm layout height limit. */}
       <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-[#050505] border-b border-white/10 px-6 h-[40px] flex items-center">
         <div className="max-w-6xl mx-auto w-full flex items-center justify-between">
           
@@ -26,7 +25,6 @@ export default function Portfolio() {
           </div>
 
           {/* STATIC NAVIGATION SECTION MAP */}
-          {/* Spacing Tweak: items-center and flex ensure links and custom dividers align flat */}
           <div className="flex items-center text-xs font-medium tracking-wide">
             <div className="hidden md:flex items-center text-neutral-400">
               
@@ -43,29 +41,24 @@ export default function Portfolio() {
               <span className="px-3 text-neutral-700">|</span>
 
               <a href="#contact" className="hover:text-white transition-colors mr-4">Connect</a>
+            </div>
           </div>
+
         </div>
       </nav>
       
       {/* ──────────────────────────────────────────────────────── */}
       {/* MAIN CONTAINER LAYOUT: SITE FRAME MATRIX                 */}
       {/* ──────────────────────────────────────────────────────── */}
-      {/* Spacing Tweak: pt-36 prevents content crashing with the 40px fixed nav. */}
-      {/* Spacing Tweak: space-y-20 sets a global 80px gap rhythm between sections. */}
       <main className="max-w-6xl mx-auto px-6 pt-36 pb-24 space-y-20">
 
         {/* ──────────────────────────────────────────────────────── */}
         {/* SECTION 01: HERO MODULE (1-COLUMN STRUCTURE)             */}
         {/* ──────────────────────────────────────────────────────── */}
-        {/* 
-          Layout Tweak: Stripped away grid-cols properties. max-w-3xl confines 
-          the headline so the lines break beautifully. text-center unifies the grid.
-        */}
         <section id="overview" className="max-w-3xl mx-auto space-y-6 text-center pt-8">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
             Engineering high-volume, behavior-mapped creatives.
           </h1>
-          {/* Spacing Tweak: mx-auto centers the paragraph bounding box inside the section */}
           <p className="text-lg text-neutral-400 max-w-xl mx-auto leading-relaxed">
             Lead Specialist in Learning Innovation &amp; Technology matching technical infrastructure with learning science to build automated ad asset generation matrices.
           </p>
@@ -113,7 +106,6 @@ export default function Portfolio() {
         {/* ──────────────────────────────────────────────────────── */}
         {/* SECTION 03: CREATIVE STORAGE GRID (3-COLUMN STRUCTURE)   */}
         {/* ──────────────────────────────────────────────────────── */}
-        {/* Layout Tweak: grid-cols-3 breaks the display row into exactly 3 columns. */}
         <section id="creative" className="border-t border-white/10 pt-16 space-y-12">
           
           <div className="space-y-2">
@@ -206,10 +198,6 @@ export default function Portfolio() {
         {/* ──────────────────────────────────────────────────────── */}
         {/* SECTION 05: SYSTEM FOOTER MODULE (2-COLUMN STRUCTURE)    */}
         {/* ──────────────────────────────────────────────────────── */}
-        {/* 
-          Layout Tweak: md:grid-cols-2 slices this section directly into halves. 
-          Items-center ensures text balances perfectly with your portrait height.
-        */}
         <footer id="contact" className="border-t border-white/10 pt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-left">
           
           {/* COLUMN A: CONNECT INTERFACES */}
@@ -232,7 +220,6 @@ export default function Portfolio() {
           </div>
 
           {/* COLUMN B: PROFILE IMAGE BLOCK */}
-          {/* Sizing Tweak: aspect-square and max-w-[380px] keeps your picture balanced and sharp. */}
           <div className="w-full max-w-[380px] mx-auto md:ml-auto aspect-square relative overflow-hidden rounded-xl border border-white/10 bg-neutral-900/10">
             <img 
               src="/portfolio/images/profile-image.jpg" 
