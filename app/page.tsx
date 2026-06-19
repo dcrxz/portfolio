@@ -23,21 +23,22 @@ export default function Portfolio() {
             </span>
           </div>
 
+          {/* STATIC NAVIGATION SECTION MAP */}
           <div className="flex items-center text-xs font-medium tracking-wide">
             <div className="flex items-center text-neutral-400">
-              <a href="#overview" className="inline-block px-3 hover:text-white transition-colors">Overview</a>
-              <span className="text-neutral-700">|</span>
+              <a href="#overview" className="hover:text-white transition-colors no-underline">&nbsp;&nbsp;Overview&nbsp;&nbsp;</a>
+              <span className="text-neutral-700 select-none">|</span>
 
-              <a href="#pipeline" className="inline-block px-3 hover:text-white transition-colors">Pipelines</a>
-              <span className="text-neutral-700">|</span>
+              <a href="#pipeline" className="hover:text-white transition-colors no-underline">&nbsp;&nbsp;Pipelines&nbsp;&nbsp;</a>
+              <span className="text-neutral-700 select-none">|</span>
 
-              <a href="#creative" className="inline-block px-3 hover:text-white transition-colors">Creative</a>
-              <span className="text-neutral-700">|</span>
+              <a href="#creative" className="hover:text-white transition-colors no-underline">&nbsp;&nbsp;Creative&nbsp;&nbsp;</a>
+              <span className="text-neutral-700 select-none">|</span>
 
-              <a href="#metrics" className="inline-block px-3 hover:text-white transition-colors">Metrics</a>
-              <span className="text-neutral-700">|</span>
+              <a href="#metrics" className="hover:text-white transition-colors no-underline">&nbsp;&nbsp;Metrics&nbsp;&nbsp;</a>
+              <span className="text-neutral-700 select-none">|</span>
 
-              <a href="#contact" className="inline-block px-3 hover:text-white transition-colors mr-2">Connect</a>
+              <a href="#contact" className="hover:text-white transition-colors mr-2 no-underline">&nbsp;&nbsp;Connect&nbsp;&nbsp;</a>
             </div>
           </div>
 
