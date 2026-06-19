@@ -32,28 +32,18 @@ export default function Portfolio() {
               
               <a href="#overview" className="hover:text-white transition-colors">Overview</a>
               <span className="px-3 text-neutral-700">|</span>
-              
+
               <a href="#pipeline" className="hover:text-white transition-colors">Pipelines</a>
               <span className="px-3 text-neutral-700">|</span>
-              
+
               <a href="#creative" className="hover:text-white transition-colors">Creative</a>
               <span className="px-3 text-neutral-700">|</span>
-              
+
               <a href="#metrics" className="hover:text-white transition-colors">Metrics</a>
               <span className="px-3 text-neutral-700">|</span>
               
               <a href="#contact" className="hover:text-white transition-colors mr-4">Connect</a>
-            </div>
-            
-            {/* ACTION TRIGGER INTERFACE */}
-            <a 
-              href="#contact" 
-              className="bg-[#6bebff] text-[#050505] px-3 py-1 rounded text-xs font-bold hover:bg-white transition-colors"
-            >
-              Connect
-            </a>
           </div>
-
         </div>
       </nav>
 
