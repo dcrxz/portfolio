@@ -27,7 +27,6 @@ export default function Portfolio() {
           {/* STATIC NAVIGATION SECTION MAP */}
           <div className="flex items-center text-xs font-medium tracking-wide">
             <div className="flex items-center space-x-4 text-neutral-400">
-              
               <a href="#overview" className="hover:text-white transition-colors">Overview</a>
               <span className="px-3 text-neutral-700">|</span>
 
@@ -53,19 +52,28 @@ export default function Portfolio() {
       <main className="max-w-6xl mx-auto px-6 pt-36 pb-24 space-y-20">
 
         {/* ──────────────────────────────────────────────────────── */}
-        {/* SECTION 01: HERO MODULE (1-COLUMN STRUCTURE)             */}
+        {/* SECTION 01: HERO MODULE (CENTERED 1-COLUMN)              */}
         {/* ──────────────────────────────────────────────────────── */}
-        <section className="max-w-3xl mx-auto text-center space-y-6 py-16">
-          <h2 className="text-4xl font-bold text-white">Engineering high-volume, behavior-mapped creatives.</h2>
-          <p className="text-neutral-400 max-w-xl mx-auto">Lead Specialist in Learning Innovation &amp; Technology matching technical infrastructure with learning science to build automated ad asset generation matrices.</p>
+        <section id="overview" className="max-w-3xl mx-auto text-center space-y-6 py-16">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
+            Engineering high-volume, behavior-mapped creatives.
+          </h1>
+          <p className="text-lg text-neutral-400 max-w-xl mx-auto leading-relaxed">
+            Lead Specialist in Learning Innovation &amp; Technology matching technical infrastructure with learning science to build automated ad asset generation matrices.
+          </p>
+          <div className="flex items-center justify-center space-x-4 pt-2">
+            <a href="#pipeline" className="border border-white/10 px-5 py-2.5 rounded-lg font-semibold hover:bg-white/5 transition-colors">
+              View Architecture
+            </a>
+          </div>
         </section>
 
         {/* ──────────────────────────────────────────────────────── */}
-        {/* SECTION 02: TECHNICAL PROCESS MODULE                     */}
+        {/* SECTION 02: TECHNICAL PROCESS MODULE (3-COLUMN GRID)      */}
         {/* ──────────────────────────────────────────────────────── */}
         <section id="pipeline" className="border-t border-white/10 pt-16 space-y-12">
           
-          <div className="space-y-2">
+          <div className="space-y-2 text-center md:text-left">
             <div className="text-xs font-mono text-[#f9cefb] tracking-widest uppercase">System Automation</div>
             <h2 className="text-3xl font-bold tracking-tight text-white">Automated Campaign Pipelines</h2>
             <p className="text-sm text-neutral-400 max-w-xl">Turning target data arrays into complete social media ad configurations in under 10 minutes.</p>
@@ -73,19 +81,19 @@ export default function Portfolio() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* CARD 01 */}
-            <div className="p-6 bg-neutral-900/10 border border-white/10 rounded-xl space-y-3 hover:border-white/20 transition-colors">
+            <div className="bg-neutral-900/30 border border-white/5 p-8 rounded-xl space-y-4 hover:border-white/10 transition-colors">
               <div className="text-xs font-mono text-[#6bebff]">01 / INGESTION</div>
               <h3 className="font-bold text-white text-base">The Grabber Module</h3>
               <p className="text-sm text-neutral-400 leading-relaxed">Python scraping system engineered to automatically extract business parameters and sanitize layout metadata.</p>
             </div>
             {/* CARD 02 */}
-            <div className="p-6 bg-neutral-900/10 border border-white/10 rounded-xl space-y-3 hover:border-white/20 transition-colors">
+            <div className="bg-neutral-900/30 border border-white/5 p-8 rounded-xl space-y-4 hover:border-white/10 transition-colors">
               <div className="text-xs font-mono text-[#578cd6]">02 / PROCESSING</div>
               <h3 className="font-bold text-white text-base">The Context Brain</h3>
               <p className="text-sm text-neutral-400 leading-relaxed">Algorithmic evaluation layer running targeted demographic validation and direct-response angle mapping.</p>
             </div>
             {/* CARD 03 */}
-            <div className="p-6 bg-neutral-900/10 border border-white/10 rounded-xl space-y-3 hover:border-white/20 transition-colors">
+            <div className="bg-neutral-900/30 border border-white/5 p-8 rounded-xl space-y-4 hover:border-white/10 transition-colors">
               <div className="text-xs font-mono text-[#f9cefb]">03 / COMPILATION</div>
               <h3 className="font-bold text-white text-base">The Production Factory</h3>
               <p className="text-sm text-neutral-400 leading-relaxed">High-volume generative array outputting clean, synchronized asset variations across cross-platform dimensions.</p>
@@ -187,21 +195,21 @@ export default function Portfolio() {
         </section>
 
         {/* ──────────────────────────────────────────────────────── */}
-        {/* SECTION 05: SYSTEM FOOTER MODULE (2-COLUMN STRUCTURE)    */}
+        {/* SECTION 05: SYSTEM FOOTER MODULE (ASYMMETRIC 2-COLUMN)   */}
         {/* ──────────────────────────────────────────────────────── */}
-        <footer id="contact" className="border-t border-white/10 pt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-left">
+        <footer id="contact" className="border-t border-white/10 pt-16 grid grid-cols-1 md:grid-cols-12 gap-12 items-center text-left">
           
-          {/* COLUMN A: CONNECT INTERFACES */}
-          <div className="space-y-6">
+          {/* COLUMN A: CONNECT INTERFACES (Spans 7 out of 12 columns) */}
+          <div className="md:col-span-7 space-y-6">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tight text-white">Let&apos;s Build the Machine</h2>
               <p className="text-sm text-neutral-400 font-mono">Initialize automated matrix pipelines and strategic creative frameworks.</p>
             </div>
             <div className="flex flex-wrap gap-4 pt-2">
-              <a href="mailto:dcrxz@pm.me" className="bg-[#6bebff] text-[#050505] px-6 py-3 rounded font-bold hover:bg-white transition-colors text-sm font-mono">
+              <a href="mailto:dcrxz@pm.me" className="bg-[#6bebff] text-[#050505] px-6 py-3 rounded-lg font-bold hover:bg-white transition-colors text-sm font-mono">
                 EXECUTE MAIL_ROUTING
               </a>
-              <a href="https://dcrxz.github.io/portfolio/Darwin_Cruz_Resume.pdf" target="_blank" rel="noopener noreferrer" className="bg-neutral-900 border border-white/10 text-neutral-300 px-6 py-3 rounded font-bold hover:bg-neutral-800 transition-colors text-sm font-mono">
+              <a href="https://dcrxz.github.io/portfolio/Darwin_Cruz_Resume.pdf" target="_blank" rel="noopener noreferrer" className="bg-neutral-900 border border-white/10 text-neutral-300 px-6 py-3 rounded-lg font-bold hover:bg-neutral-800 transition-colors text-sm font-mono">
                 PULL RESUME_MANIFEST
               </a>
             </div>
@@ -210,12 +218,12 @@ export default function Portfolio() {
             </p>
           </div>
 
-          {/* COLUMN B: PROFILE IMAGE BLOCK */}
-          <div className="w-full max-w-[380px] mx-auto md:ml-auto aspect-square relative overflow-hidden rounded-xl border border-white/10 bg-neutral-900/10">
+          {/* COLUMN B: PROFILE IMAGE BLOCK (Spans 5 out of 12 columns) */}
+          <div className="md:col-span-5 w-full max-w-[340px] mx-auto md:ml-auto aspect-square relative overflow-hidden rounded-xl border border-white/5 bg-neutral-900/10 group">
             <img 
               src="/images/profile-image.jpg" 
               alt="Darwin Ernest Cruz Portrait" 
-              className="absolute inset-0 w-full h-full object-cover grayscale brightness-95"
+              className="absolute inset-0 w-full h-full object-cover grayscale brightness-95 group-hover:grayscale-0 transition-all duration-500"
             />
           </div>
 
