@@ -20,6 +20,7 @@ body {
   font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
+  margin: 0; /* Ensures no default browser gaps at screen edges */
 }
 
 /* High-end Film Grain Terminal Texture Overlay */
@@ -30,5 +31,6 @@ body::before {
   pointer-events: none;
   z-index: 9999;
   opacity: 0.025;
+  /* Fixed: Fully URL-encoded SVG parameters to prevent production compiler asset crashes */
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
