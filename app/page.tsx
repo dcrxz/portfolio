@@ -51,60 +51,162 @@ export default function Portfolio() {
       <main className="max-w-6xl mx-auto px-6 pt-16 pb-24 space-y-20">
 
         {/* ──────────────────────────────────────────────────────── */}
-        {/* SECTION 01: HERO MODULE (CENTERED 1-COLUMN)              */}
+        {/* SECTION 01: HERO / OVERVIEW MODULE (CENTERED)            */}
         {/* ──────────────────────────────────────────────────────── */}
-        <section id="overview" className="max-w-3xl mx-auto text-center space-y-6 py-12">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
-            Engineering high-volume, behavior-mapped creatives.
-          </h1>
-          <p className="text-lg text-neutral-400 max-w-xl mx-auto leading-relaxed">
-            Lead Specialist in Learning Innovation &amp; Technology matching technical infrastructure with learning science to build automated ad asset generation matrices.
-          </p>
-          <div className="flex items-center justify-center space-x-4 pt-2">
-            <a href="#pipeline" className="border border-white/10 px-5 py-2.5 rounded-lg font-semibold hover:bg-white/5 transition-colors">
-              View Architecture
-            </a>
+        <section id="overview" style={{ 
+          paddingTop: '8.5rem',       // Explicit clearance space for the fixed top bar
+          paddingBottom: '5rem', 
+          display: 'block', 
+          width: '100%',
+          boxSizing: 'border-box'
+        }}>
+          
+          {/* MAX-WIDTH CENTERING CONTAINER */}
+          <div style={{ 
+            maxWidth: '1200px',        // Matches the max bounds of your lower grid modules
+            margin: '0 auto',          // Auto-centers the bounding box on the screen
+            display: 'flex', 
+            flexDirection: 'column', 
+            gap: '1.5rem',
+            textAlign: 'center',       // Centers the actual text lines
+            alignItems: 'center'       // Centers any block child elements inside the column
+          }}>
+            
+            <span style={{ 
+              fontFamily: 'monospace', 
+              fontSize: '0.75rem', 
+              color: '#6bebff', 
+              letterSpacing: '0.15em',
+              textTransform: 'uppercase'
+            }}>
+              LEAD SPECIALIST // LEARNING INNOVATION & TECHNOLOGY
+            </span>
+            
+            <h1 style={{ 
+              fontSize: '3rem', 
+              fontWeight: 'bold', 
+              color: '#F5F5F5', 
+              letterSpacing: '-0.03em', 
+              lineHeight: '1.1', 
+              margin: '0 auto',
+              maxWidth: '46rem'        // Keeps the massive headline compact and readable
+            }}>
+              Engineering high-volume, behavior-mapped creatives.
+            </h1>
+            
+            <p style={{ 
+              fontSize: '1rem', 
+              color: '#a3a3a3', 
+              lineHeight: '1.6', 
+              margin: '0 auto',
+              maxWidth: '38rem'        // Stops paragraph lines from stretching infinitely
+            }}>
+              Building highly optimized, multi-source content generation systems leveraging learning science first and artificial intelligence second.
+            </p>
+            
           </div>
+
         </section>
 
         {/* ──────────────────────────────────────────────────────── */}
         {/* SECTION 02: TECHNICAL PROCESS MODULE                     */}
         {/* ──────────────────────────────────────────────────────── */}
-        <section id="pipeline" className="border-t border-white/10 pt-16 space-y-12">
+        <section id="pipeline" style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '4rem', display: 'block', width: '100%' }}>
           
-          <div className="space-y-2 text-center md:text-left">
-            <div className="text-xs font-mono text-[#f9cefb] tracking-widest uppercase">System Automation</div>
-            <h2 className="text-3xl font-bold tracking-tight text-white">Automated Campaign Pipelines</h2>
-            <p className="text-sm text-neutral-400 max-w-xl">Turning target data arrays into complete social media ad configurations in under 10 minutes.</p>
+          <div style={{ marginBottom: '3rem', textAlign: 'left' }}>
+            <div style={{ fontFamily: 'monospace', fontSize: '0.75rem', color: '#f9cefb', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
+              System Automation
+            </div>
+            <h2 style={{ fontSize: '1.75rem', fontWeight: 'bold', color: '#F5F5F5', letterSpacing: '-0.02em', marginBottom: '0.5rem' }}>
+              Automated Campaign Pipelines
+            </h2>
+            <p style={{ fontSize: '0.875rem', color: '#a3a3a3', maxWidth: '36rem', margin: 0, lineHeight: '1.5' }}>
+              Turning target data arrays into complete social media ad configurations in under 10 minutes.
+            </p>
           </div>
 
-          {/* GRID CONTROLLER: Explicitly sets 1 column on mobile, 3 columns on medium screens up */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch w-full">
+          {/* THE GRID FLEX BOX MATRIX */}
+          <div style={{ 
+            display: 'flex', 
+            flexDirection: 'row', 
+            flexWrap: 'wrap', 
+            gap: '1.5rem', 
+            width: '100%', 
+            justifyContent: 'space-between' 
+          }}>
             
             {/* CARD 01 */}
-            <div className="bg-neutral-900/30 border border-white/5 p-8 rounded-xl flex flex-col justify-between hover:border-white/10 transition-colors h-full">
-              <div className="space-y-4">
-                <div className="text-xs font-mono text-[#6bebff]">01 / INGESTION</div>
-                <h3 className="font-bold text-white text-base">The Grabber Module</h3>
-                <p className="text-sm text-neutral-400 leading-relaxed">Python scraping system engineered to automatically extract business parameters and sanitize layout metadata.</p>
+            <div style={{ 
+              flex: '1 1 30%', 
+              minWidth: '280px', 
+              backgroundColor: 'rgba(245, 245, 245, 0.03)', 
+              border: '1px solid rgba(255,255,255,0.05)', 
+              borderRadius: '1rem', 
+              padding: '1.5rem', 
+              boxSizing: 'border-box',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between'
+            }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#6bebff' }} />
+                  <span style={{ fontFamily: 'monospace', fontSize: '0.75rem', color: '#6bebff', tracking: '0.1em' }}>01 / INGESTION</span>
+                </div>
+                <h3 style={{ fontWeight: 'bold', color: '#F5F5F5', fontSize: '1.125rem', margin: 0 }}>The Grabber Module</h3>
+                <p style={{ fontSize: '0.875rem', color: '#a3a3a3', lineHeight: '1.6', margin: 0 }}>
+                  Python scraping system engineered to automatically extract business parameters and sanitize layout metadata.
+                </p>
               </div>
             </div>
-            
+
             {/* CARD 02 */}
-            <div className="bg-neutral-900/30 border border-white/5 p-8 rounded-xl flex flex-col justify-between hover:border-white/10 transition-colors h-full">
-              <div className="space-y-4">
-                <div className="text-xs font-mono text-[#578cd6]">02 / PROCESSING</div>
-                <h3 className="font-bold text-white text-base">The Context Brain</h3>
-                <p className="text-sm text-neutral-400 leading-relaxed">Algorithmic evaluation layer running targeted demographic validation and direct-response angle mapping.</p>
+            <div style={{ 
+              flex: '1 1 30%', 
+              minWidth: '280px', 
+              backgroundColor: 'rgba(245, 245, 245, 0.03)', 
+              border: '1px solid rgba(255,255,255,0.05)', 
+              borderRadius: '1rem', 
+              padding: '1.5rem', 
+              boxSizing: 'border-box',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between'
+            }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#578cd6' }} />
+                  <span style={{ fontFamily: 'monospace', fontSize: '0.75rem', color: '#578cd6', tracking: '0.1em' }}>02 / PROCESSING</span>
+                </div>
+                <h3 style={{ fontWeight: 'bold', color: '#F5F5F5', fontSize: '1.125rem', margin: 0 }}>The Context Brain</h3>
+                <p style={{ fontSize: '0.875rem', color: '#a3a3a3', lineHeight: '1.6', margin: 0 }}>
+                  Algorithmic evaluation layer running targeted demographic validation and direct-response angle mapping.
+                </p>
               </div>
             </div>
-            
+
             {/* CARD 03 */}
-            <div className="bg-neutral-900/30 border border-white/5 p-8 rounded-xl flex flex-col justify-between hover:border-white/10 transition-colors h-full">
-              <div className="space-y-4">
-                <div className="text-xs font-mono text-[#f9cefb]">03 / COMPILATION</div>
-                <h3 className="font-bold text-white text-base">The Production Factory</h3>
-                <p className="text-sm text-neutral-400 leading-relaxed">High-volume generative array outputting clean, synchronized asset variations across cross-platform dimensions.</p>
+            <div style={{ 
+              flex: '1 1 30%', 
+              minWidth: '280px', 
+              backgroundColor: 'rgba(245, 245, 245, 0.03)', 
+              border: '1px solid rgba(255,255,255,0.05)', 
+              borderRadius: '1rem', 
+              padding: '1.5rem', 
+              boxSizing: 'border-box',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between'
+            }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#f9cefb' }} />
+                  <span style={{ fontFamily: 'monospace', fontSize: '0.75rem', color: '#f9cefb', tracking: '0.1em' }}>03 / COMPILATION</span>
+                </div>
+                <h3 style={{ fontWeight: 'bold', color: '#F5F5F5', fontSize: '1.125rem', margin: 0 }}>The Production Factory</h3>
+                <p style={{ fontSize: '0.875rem', color: '#a3a3a3', lineHeight: '1.6', margin: 0 }}>
+                  High-volume generative array outputting clean, synchronized asset variations across cross-platform dimensions.
+                </p>
               </div>
             </div>
 
@@ -253,36 +355,107 @@ export default function Portfolio() {
         </section>
 
         {/* ──────────────────────────────────────────────────────── */}
-        {/* SECTION 05: SYSTEM FOOTER MODULE (ASYMMETRIC 2-COLUMN)   */}
+        {/* SECTION 05: SYSTEM FOOTER MODULE (CENTERED 2-COLUMN)     */}
         {/* ──────────────────────────────────────────────────────── */}
-        <footer id="contact" className="border-t border-white/10 pt-16 grid grid-cols-1 md:grid-cols-12 gap-12 items-center text-left">
+        <footer id="contact" style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '4rem', paddingBottom: '4rem', display: 'block', width: '100%' }}>
           
-          <div className="md:col-span-7 space-y-6">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tight text-white">Let&apos;s Build the Machine</h2>
-              <p className="text-sm text-neutral-400 font-mono">Initialize automated matrix pipelines and strategic creative frameworks.</p>
-            </div>
-            <div className="flex flex-wrap gap-4 pt-2">
-              <a href="mailto:dcrxz@pm.me" className="bg-[#6bebff] text-[#050505] px-6 py-3 rounded-lg font-bold hover:bg-white transition-colors text-sm font-mono">
-                EXECUTE MAIL_ROUTING
-              </a>
-              <a href="https://dcrxz.github.io/portfolio/Darwin_Cruz_Resume.pdf" target="_blank" rel="noopener noreferrer" className="bg-neutral-900 border border-white/10 text-neutral-300 px-6 py-3 rounded-lg font-bold hover:bg-neutral-800 transition-colors text-sm font-mono">
-                PULL RESUME_MANIFEST
-              </a>
-            </div>
-            <p className="text-xs font-mono text-neutral-600 pt-6">
-              © 2026 Darwin Ernest Cruz | Portfolio v1.0
-            </p>
-          </div>
+          {/* MAX-WIDTH WRAPPER: Centers the entire footer layout row block on wide screens */}
+          <div style={{ 
+            display: 'flex', 
+            flexDirection: 'row', 
+            flexWrap: 'wrap', 
+            gap: '3rem',               // Increases breathing space between text and image
+            width: '100%', 
+            maxWidth: '1200px',        // Limits expansion so it matches your main upper grid profiles
+            margin: '0 auto',          // Forces horizontal auto-centering inside the page viewport
+            justifyContent: 'center',  // Pulls both columns inward toward the vertical center axis
+            alignItems: 'center'
+          }}>
+            
+            {/* LEFT COLUMN: TEXT & ACTIONS */}
+            <div style={{ 
+              flex: '1 1 55%', 
+              minWidth: '300px', 
+              maxWidth: '600px',       // Prevents text lines from stretching out too wide
+              boxSizing: 'border-box',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '1.5rem'
+            }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <h2 style={{ fontSize: '1.75rem', fontWeight: 'bold', color: '#F5F5F5', letterSpacing: '-0.02em', margin: 0 }}>
+                  Let&apos;s Build the Machine
+                </h2>
+                <p style={{ fontFamily: 'monospace', fontSize: '0.75rem', color: '#a3a3a3', margin: 0 }}>
+                  Initialize automated matrix pipelines and strategic creative frameworks.
+                </p>
+              </div>
 
-          <div className="md:col-span-5 w-full max-w-[340px] mx-auto md:ml-auto aspect-square relative overflow-hidden rounded-xl border border-white/5 bg-neutral-900/10 group">
-            <img 
-              src="/images/profile-image.jpg" 
-              alt="Darwin Ernest Cruz Portrait" 
-              className="absolute inset-0 w-full h-full object-cover grayscale brightness-95 group-hover:grayscale-0 transition-all duration-500"
-            />
-          </div>
+              {/* INTERACTION BUTTON MATRIX */}
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
+                <a href="mailto:dcrxz@pm.me" style={{ 
+                  backgroundColor: '#6bebff', 
+                  color: '#050505', 
+                  padding: '0.75rem 1.5rem', 
+                  borderRadius: '0.5rem', 
+                  fontWeight: 'bold', 
+                  textDecoration: 'none', 
+                  fontSize: '0.75rem', 
+                  fontFamily: 'monospace',
+                  display: 'inline-block'
+                }}>
+                  EXECUTE MAIL_ROUTING
+                </a>
+                
+                <a href="https://dcrxz.github.io/portfolio/Darwin_Cruz_Resume.pdf" target="_blank" rel="noopener noreferrer" style={{ 
+                  backgroundColor: 'rgba(245, 245, 245, 0.03)', 
+                  border: '1px solid rgba(255,255,255,0.1)', 
+                  color: '#d4d4d4', 
+                  padding: '0.75rem 1.5rem', 
+                  borderRadius: '0.5rem', 
+                  fontWeight: 'bold', 
+                  textDecoration: 'none', 
+                  fontSize: '0.75rem', 
+                  fontFamily: 'monospace',
+                  display: 'inline-block'
+                }}>
+                  PULL RESUME_MANIFEST
+                </a>
+              </div>
 
+              <p style={{ fontFamily: 'monospace', fontSize: '0.75rem', color: '#525252', marginTop: '1.5rem', margin: 0 }}>
+                © 2026 Darwin Ernest Cruz | Portfolio v1.0
+              </p>
+            </div>
+
+            {/* RIGHT COLUMN: PROFILE IMAGE */}
+            <div style={{ 
+              flex: '1 1 35%', 
+              minWidth: '280px', 
+              maxWidth: '320px',       // Clean, uniform square framing profile bounds
+              aspectRatio: '1/1', 
+              backgroundColor: 'rgba(245, 245, 245, 0.02)', 
+              border: '1px solid rgba(255,255,255,0.05)', 
+              borderRadius: '0.75rem', 
+              overflow: 'hidden', 
+              position: 'relative',
+              boxSizing: 'border-box'
+            }}>
+              <img 
+                src="/images/profile-image.jpg" 
+                alt="Darwin Ernest Cruz Portrait" 
+                style={{ 
+                  position: 'absolute',
+                  inset: 0,
+                  width: '100%', 
+                  height: '100%', 
+                  objectFit: 'cover',
+                  filter: 'grayscale(100%) brightness(95%)'
+                }} 
+              />
+            </div>
+
+          </div>
         </footer>
 
       </main>
