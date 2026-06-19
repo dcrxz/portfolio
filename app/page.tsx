@@ -126,8 +126,14 @@ export default function Portfolio() {
           {/* ASSET CONTAINER 1 */}
           <div className="bg-neutral-900/20 border border-neutral-900 rounded-lg p-4 space-y-4">
             <div className="aspect-[9/16] bg-brand-background rounded flex items-center justify-center border border-brand-secondary/20">
-              {/* Ready for your public/videos/ asset embedding hooks */}
-              <span className="text-sm font-mono text-neutral-600">[ VIDEO SLOT: UGC VIDEO 1 ]</span>
+              <video 
+                src="/videos/ugc-video-1.mp4" 
+                autoPlay 
+                muted 
+                loop 
+                playsInline
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h4 className="font-heading font-bold text-white text-base">UGC Video 1</h4>
@@ -138,7 +144,14 @@ export default function Portfolio() {
           {/* ASSET CONTAINER 2 */}
           <div className="bg-neutral-900/20 border border-neutral-900 rounded-lg p-4 space-y-4">
             <div className="aspect-[9/16] bg-brand-background rounded flex items-center justify-center border border-brand-secondary/20">
-              <span className="text-sm font-mono text-neutral-600">[ VIDEO SLOT: UGC VIDEO 2 ]</span>
+              <video 
+                src="/videos/ugc-video-2.mp4" 
+                autoPlay 
+                muted 
+                loop 
+                playsInline
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h4 className="font-heading font-bold text-white text-base">UGC Video 2</h4>
@@ -149,7 +162,14 @@ export default function Portfolio() {
           {/* ASSET CONTAINER 3 */}
           <div className="bg-neutral-900/20 border border-neutral-900 rounded-lg p-4 space-y-4">
             <div className="aspect-[9/16] bg-brand-background rounded flex items-center justify-center border border-brand-secondary/20">
-              <span className="text-sm font-mono text-neutral-600">[ VIDEO SLOT: PRODUCT VIDEO ]</span>
+              <video 
+                src="/videos/product-focus.mp4" 
+                autoPlay 
+                muted 
+                loop 
+                playsInline
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h4 className="font-heading font-bold text-white text-base">10-Second Product Video</h4>
