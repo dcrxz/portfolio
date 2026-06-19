@@ -11,7 +11,7 @@ export default function Portfolio() {
           {/* BRAND AXIS: IMAGE LOGO INTEGRATION */}
           <div className="flex items-center space-x-3 cursor-pointer">
             <img 
-              src="/images/4x4-logo.png" 
+              src="/portfolio/images/4x4-logo.png"
               alt="CRXZ System Logo" 
               className="w-5 h-5 rounded object-cover border border-white/10"
             />

@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${outfit.variable} ${spaceMono.variable} ${bebasNeue.variable} antialiased`}>
-      <body className="bg-[#050505]">
+      <body className="bg-[#050505] m-0 p-0 top-0 left-0">
         {children}
       </body>
     </html>
