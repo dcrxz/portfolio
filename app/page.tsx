@@ -110,6 +110,7 @@ export default function Portfolio() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {/* CONTAINER 1 */}
             <div className="bg-neutral-900/20 border border-neutral-900 rounded-lg p-4 space-y-4">
               <div className="aspect-[9/16] bg-brand-background rounded-lg overflow-hidden border border-brand-secondary/20 relative">
                 <video 
@@ -127,5 +128,133 @@ export default function Portfolio() {
               </div>
             </div>
 
+            {/* CONTAINER 2 */}
             <div className="bg-neutral-900/20 border border-neutral-900 rounded-lg p-4 space-y-4">
-              <div className="aspect-[9/16] bg-brand-
+              <div className="aspect-[9/16] bg-brand-background rounded-lg overflow-hidden border border-brand-secondary/20 relative">
+                <video 
+                  src="/videos/ugc-video-2.mp4" 
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 className="font-heading font-bold text-white text-base">UGC Video 2</h4>
+                <p className="text-sm text-neutral-400 mt-1">Multiple format user-generated content asset configurations.</p>
+              </div>
+            </div>
+
+            {/* CONTAINER 3 */}
+            <div className="bg-neutral-900/20 border border-neutral-900 rounded-lg p-4 space-y-4">
+              <div className="aspect-[9/16] bg-brand-background rounded-lg overflow-hidden border border-brand-secondary/20 relative">
+                <video 
+                  src="/videos/product-focus.mp4" 
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 className="font-heading font-bold text-white text-base">10-Second Product Video</h4>
+                <p className="text-sm text-neutral-400 mt-1">Hyper-realistic product macro focus blended into native TikTok interface grids.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 space-y-4">
+            <h3 className="text-sm font-mono text-brand-primary mb-4">CHILI CHEWS HOOK MATRIX TESTING</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="p-5 bg-neutral-900/40 border border-neutral-900 rounded">
+                <span className="text-sm font-mono bg-neutral-800 text-brand-primary px-2 py-0.5 rounded uppercase">Value Prop Hook</span>
+                <p className="text-sm mt-3 text-neutral-300 italic">&quot;Sweet. Sour. Heat. 🌶️ Every single Chili Chew is a wild flavor journey packed with real chili, citrus, and chamoy. Build your box today!&quot;</p>
+              </div>
+              <div className="p-5 bg-neutral-900/40 border border-neutral-900 rounded">
+                <span className="text-sm font-mono bg-neutral-800 text-brand-accent px-2 py-0.5 rounded uppercase">Painpoint Hook</span>
+                <p className="text-sm mt-3 text-neutral-300 italic">&quot;Bored of basic, one-note candy? Grandma’s snacks are a total snooze fest. Upgrade your stash to the real chili kick of Chili Chews.&quot;</p>
+              </div>
+              <div className="p-5 bg-neutral-900/40 border border-neutral-900 rounded">
+                <span className="text-sm font-mono bg-neutral-800 text-neutral-400 px-2 py-0.5 rounded uppercase">Curiosity Hook</span>
+                <p className="text-sm mt-3 text-neutral-300 italic">&quot;It starts sweet, turns sour, then hits with a tingly chili kick that lingers. Ready for a gummy candy that hits completely different?&quot;</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* SECTION 04: PERFORMANCE SPECTRUM */}
+        <section id="metrics" className="border-t border-neutral-900 pt-16 space-y-12">
+          <div className="space-y-2">
+            <span className="text-sm font-mono text-brand-accent uppercase tracking-widest">[04 / SYSTEM PERFORMANCE METRICS]</span>
+            <h2 className="text-3xl font-heading font-bold text-white">Verified Infrastructure Analytics</h2>
+          </div>
+
+          <div className="overflow-x-auto border border-neutral-900 rounded-lg bg-neutral-900/10">
+            <table className="w-full text-left border-collapse text-sm">
+              <thead>
+                <tr className="border-b border-neutral-900 bg-neutral-900/50 font-mono text-neutral-400">
+                  <th className="p-4 font-bold text-brand-primary">SYSTEM PARAMETER</th>
+                  <th className="p-4 font-bold">BASELINE PROCESS</th>
+                  <th className="p-4 font-bold text-brand-accent">AUTOMATED TARGET</th>
+                  <th className="p-4 font-bold">NET VARIANCE RESULT</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-neutral-900 font-mono text-neutral-300">
+                <tr className="hover:bg-neutral-900/30 transition-colors">
+                  <td className="p-4 font-bold text-white">Ad Content Variation Volume</td>
+                  <td className="p-4">Manual Custom Builds</td>
+                  <td className="p-4 text-brand-accent">Synchronized Bot Arrays</td>
+                  <td className="p-4 text-brand-primary font-bold">+600% Acceleration</td>
+                </tr>
+                <tr className="hover:bg-neutral-900/30 transition-colors">
+                  <td className="p-4 font-bold text-white">Data Ingestion Operational Errors</td>
+                  <td className="p-4">Standard Manual Entry</td>
+                  <td className="p-4 text-brand-accent">Algorithmic Ingestion Layer</td>
+                  <td className="p-4 text-emerald-400 font-bold">-90% Mitigation</td>
+                </tr>
+                <tr className="hover:bg-neutral-900/30 transition-colors">
+                  <td className="p-4 font-bold text-white">Annual Operational ROI</td>
+                  <td className="p-4">Segmented Legacy Systems</td>
+                  <td className="p-4 text-brand-accent">Unified Automation Matrix</td>
+                  <td className="p-4 text-brand-primary font-bold">+$35K Secure Savings</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* SECTION 05: FOOTER */}
+        <footer id="contact" className="border-t border-neutral-900 pt-16 text-center space-y-8">
+          <div className="space-y-2">
+            <h2 className="text-3xl font-heading font-bold text-white">Let&apos;s Build the Machine</h2>
+            <p className="text-sm text-neutral-400 font-mono">Let&apos;s talk about automating your creative pipeline.</p>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-4 pt-4">
+            <a 
+              href="mailto:dcrxz@pm.me"
+              className="font-mono text-sm bg-brand-primary text-brand-background px-6 py-3 rounded font-bold hover:bg-white transition-colors duration-150"
+            >
+              EXECUTE MAIL_ROUTING
+            </a>
+            <a 
+              href="https://dcrxz.github.io/portfolio/Darwin_Cruz_Resume.pdf"
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="font-mono text-sm bg-neutral-900 border border-neutral-800 text-neutral-300 px-6 py-3 rounded font-bold hover:bg-neutral-800 transition-colors duration-150"
+            >
+              PULL RESUME_MANIFEST
+            </a>
+          </div>
+          
+          <p className="text-sm font-mono text-neutral-700 pt-16">
+            © 2026 CRXZ SYSTEMS INC // CORE OVERRIDE ENGAGED
+          </p>
+        </footer>
+
+      </main>
+    </div>
+  );
+}
