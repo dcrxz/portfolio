@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-[#050505] text-[#F5F5F5] antialiased selection:bg-[#6bebff] selection:text-[#050505] font-sans overflow-hidden">
+    <div className="min-h-screen bg-[#050505] text-[#F5F5F5] antialiased selection:bg-[#6bebff] selection:text-[#050505] font-sans overflow-hidden m-0 p-0">
       
       {/* ──────────────────────────────────────────────────────── */}
       {/* GLOBAL HEADER PANEL                                      */}
@@ -25,19 +25,19 @@ export default function Portfolio() {
 
           <div className="flex items-center text-xs font-medium tracking-wide">
             <div className="flex items-center text-neutral-400">
-              <a href="#overview" className="px-3 hover:text-white transition-colors">Overview</a>
+              <a href="#overview" className="inline-block px-3 hover:text-white transition-colors">Overview</a>
               <span className="text-neutral-700">|</span>
 
-              <a href="#pipeline" className="px-3 hover:text-white transition-colors">Pipelines</a>
+              <a href="#pipeline" className="inline-block px-3 hover:text-white transition-colors">Pipelines</a>
               <span className="text-neutral-700">|</span>
 
-              <a href="#creative" className="px-3 hover:text-white transition-colors">Creative</a>
+              <a href="#creative" className="inline-block px-3 hover:text-white transition-colors">Creative</a>
               <span className="text-neutral-700">|</span>
 
-              <a href="#metrics" className="px-3 hover:text-white transition-colors">Metrics</a>
+              <a href="#metrics" className="inline-block px-3 hover:text-white transition-colors">Metrics</a>
               <span className="text-neutral-700">|</span>
 
-              <a href="#contact" className="px-3 hover:text-white transition-colors mr-2">Connect</a>
+              <a href="#contact" className="inline-block px-3 hover:text-white transition-colors mr-2">Connect</a>
             </div>
           </div>
 
