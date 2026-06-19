@@ -2,7 +2,8 @@ import React from 'react';
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-[#050505] text-[#F5F5F5] antialiased selection:bg-[#6bebff] selection:text-[#050505] font-sans">
+    // Added overflow-hidden to stop any image files from expanding past the window canvas
+    <div className="min-h-screen bg-[#050505] text-[#F5F5F5] antialiased selection:bg-[#6bebff] selection:text-[#050505] font-sans overflow-hidden">
       
       {/* ──────────────────────────────────────────────────────── */}
       {/* GLOBAL HEADER PANEL: SOLID & FIXED CEILING BOUNDARY      */}

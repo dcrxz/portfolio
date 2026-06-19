@@ -42,9 +42,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="h-full overflow-x-hidden">
-      {/* FIX: Combined your font variables into the className string below */}
-      <body className={`${outfit.variable} ${spaceMono.variable} ${bebasNeue.variable} bg-[#050505] m-0 p-0 antialiased min-h-full relative`}>
+    // overflow-x-hidden prevents sideways shifting, relative locks coordinate context
+    <html lang="en" className="h-full overflow-x-hidden m-0 p-0">
+      <body className={`${outfit.variable} ${spaceMono.variable} ${bebasNeue.variable} bg-[#050505] m-0 p-0 antialiased min-h-full relative overflow-y-auto overflow-x-hidden`}>
         {children}
       </body>
     </html>
