@@ -4,9 +4,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-[#050505] text-[#F5F5F5] antialiased selection:bg-[#6bebff] selection:text-[#050505] font-sans">
       
-      {/* ──────────────────────────────────────────────────────── */}
-      {/* FIXED REALTIME-STYLE HEADER HUD                          */}
-      {/* ──────────────────────────────────────────────────────── */}
+      {/* FIXED REALTIME-STYLE HEADER HUD */}
       <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-[#050505]/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           
@@ -20,7 +18,7 @@ export default function Portfolio() {
             </span>
           </div>
 
-          {/* NAVIGATION NAVIGATION LINKS */}
+          {/* NAVIGATION LINKS */}
           <div className="flex items-center space-x-8 text-xs font-medium tracking-wide">
             <div className="hidden md:flex space-x-6 text-neutral-400">
               <a href="#overview" className="hover:text-white transition-colors">Overview</a>
@@ -29,7 +27,7 @@ export default function Portfolio() {
               <a href="#metrics" className="hover:text-white transition-colors">Metrics</a>
             </div>
             
-            {/* CALL TO ACTION ACCENT NODE */}
+            {/* CALL TO ACTION */}
             <a 
               href="#contact" 
               className="bg-[#6bebff] text-[#050505] px-4 py-2 rounded text-xs font-bold hover:bg-white transition-colors"
@@ -41,23 +39,19 @@ export default function Portfolio() {
         </div>
       </nav>
 
-      {/* ──────────────────────────────────────────────────────── */}
-      {/* MAIN MODULAR CANVAS GRID                                 */}
-      {/* ──────────────────────────────────────────────────────── */}
+      {/* MAIN MODULAR CANVAS GRID */}
       <main className="max-w-6xl mx-auto px-6 pt-32 pb-24 space-y-20">
 
-        {/* ──────────────────────────────────────────────────────── */}
-        {/* SECTION 01: HERO MODULE (2-COLUMN BALANCED SPLIT)        */}
-        {/* ──────────────────────────────────────────────────────── */}
+        {/* SECTION 01: HERO MODULE */}
         <section id="overview" className="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-8">
           
-          {/* LEFT PANEL: MASSIVE HEADLINE & SUBTEXT */}
+          {/* LEFT PANEL */}
           <div className="lg:col-span-7 space-y-6 flex flex-col justify-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
               Engineering high-volume, behavior-mapped creatives.
             </h1>
             <p className="text-lg text-neutral-400 max-w-xl leading-relaxed">
-              Lead Specialist in Learning Innovation &amp; Technology matching technical infrastructure (BS IT) with learning science to build automated ad asset generation matrices.
+              Lead Specialist in Learning Innovation &amp; Technology matching technical infrastructure with learning science to build automated ad asset generation matrices.
             </p>
             <div className="flex items-center space-x-4 pt-2">
               <a href="#pipeline" className="border border-white/10 px-5 py-2.5 rounded text-sm font-semibold hover:bg-white/5 transition-colors">
@@ -66,7 +60,7 @@ export default function Portfolio() {
             </div>
           </div>
 
-          {/* RIGHT PANEL: MINIMAL CALLOUT CONTAINER */}
+          {/* RIGHT PANEL */}
           <div className="lg:col-span-5 bg-neutral-900/20 border border-white/10 p-8 rounded-xl flex flex-col justify-between space-y-8">
             <div className="space-y-4">
               <div className="text-xs font-mono text-[#6bebff] tracking-widest uppercase">// DEPLOYMENT_CONFIG</div>
@@ -83,9 +77,7 @@ export default function Portfolio() {
 
         </section>
 
-        {/* ──────────────────────────────────────────────────────── */}
-        {/* SECTION 02: TECHNICAL PROCESS MODULE (3-COLUMN MATRIX)   */}
-        {/* ──────────────────────────────────────────────────────── */}
+        {/* SECTION 02: TECHNICAL PROCESS MODULE */}
         <section id="pipeline" className="border-t border-white/10 pt-16 space-y-12">
           
           <div className="space-y-2">
@@ -117,9 +109,7 @@ export default function Portfolio() {
 
         </section>
 
-        {/* ──────────────────────────────────────────────────────── */}
-        {/* SECTION 03: CREATIVE STORAGE GIRD (NATIVE VIDEO LOOPS)   */}
-        {/* ──────────────────────────────────────────────────────── */}
+        {/* SECTION 03: CREATIVE STORAGE GRID */}
         <section id="creative" className="border-t border-white/10 pt-16 space-y-12">
           
           <div className="space-y-2">
@@ -164,9 +154,7 @@ export default function Portfolio() {
 
         </section>
 
-        {/* ──────────────────────────────────────────────────────── */}
-        {/* SECTION 04: METRICS SPECTROMETER DATA GRID               */}
-        {/* ──────────────────────────────────────────────────────── */}
+        {/* SECTION 04: METRICS SPECTROMETER DATA GRID */}
         <section id="metrics" className="border-t border-white/10 pt-16 space-y-12">
           
           <div className="space-y-2">
@@ -209,9 +197,7 @@ export default function Portfolio() {
 
         </section>
 
-        {/* ──────────────────────────────────────────────────────── */}
-        {/* SECTION 05: SYSTEM FOOTER                                */}
-        {/* ──────────────────────────────────────────────────────── */}
+        {/* SECTION 05: SYSTEM FOOTER */}
         <footer id="contact" className="border-t border-white/10 pt-16 text-center space-y-6">
           <h2 className="text-3xl font-bold tracking-tight text-white">Let&apos;s Build the Machine</h2>
           <p className="text-sm text-neutral-400 font-mono max-w-sm mx-auto">Initialize automated matrix pipelines and strategic creative frameworks.</p>
