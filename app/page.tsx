@@ -4,7 +4,6 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-[#050505] text-[#F5F5F5] antialiased selection:bg-[#6bebff] selection:text-[#050505]">
       
-      {/* NAVIGATION BAR */}
       {/* FIXED SYSTEM HUD / HEADLESS NAVIGATION PANEL */}
       <nav className="sticky top-0 z-50 w-full bg-[#050505]/90 backdrop-blur-md border-b border-neutral-900/60 px-6 py-4 transition-all duration-200">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
@@ -267,4 +266,20 @@ export default function Portfolio() {
             </a>
             <a 
               href="https://dcrxz.github.io/portfolio/Darwin_Cruz_Resume.pdf"
-              target
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="font-mono text-sm bg-neutral-900 border border-neutral-800 text-neutral-300 px-6 py-3 rounded font-bold hover:bg-neutral-800 transition-colors duration-150"
+            >
+              PULL RESUME_MANIFEST
+            </a>
+          </div>
+          
+          <p className="text-sm font-mono text-neutral-700 pt-16">
+            © 2026 CRXZ SYSTEMS INC // CORE OVERRIDE ENGAGED
+          </p>
+        </footer>
+
+      </main>
+    </div>
+  );
+}
