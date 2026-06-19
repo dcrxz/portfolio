@@ -31,9 +31,9 @@ const config: Config = {
       },
       // FONT STACK ROUTING: Tied exactly to your layout.tsx variables
       fontFamily: {
-        sans: ['var(--font-sans)', 'sans-serif'],   // Renders your clean "Outfit" font
-        mono: ['var(--font-mono)', 'monospace'],    // Renders your technical "Space Mono"
-        bebas: ['var(--font-bebas)', 'sans-serif'], // Gives you the striking "Bebas Neue" utility class
+        sans: ['var(--font-sans)', 'sans-serif'],   // Maps to Outfit
+        mono: ['var(--font-mono)', 'monospace'],    // Maps to Space Mono
+        bebas: ['var(--font-bebas)', 'sans-serif'], // Maps to Bebas Neue
       },
       // WEIGHT MATRIX: Text thickness configurations
       fontWeight: {
