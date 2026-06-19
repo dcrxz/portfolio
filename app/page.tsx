@@ -11,9 +11,11 @@ export default function Portfolio() {
           {/* BRAND AXIS: IMAGE LOGO INTEGRATION */}
           <div className="flex items-center space-x-3 cursor-pointer">
             <img 
-              src="/portfolio/images/4x4-logo.png"
-              alt="CRXZ System Logo" 
-              className="w-5 h-5 rounded object-cover border border-white/10"
+              src="/portfolio/images/4x4-logo.png" 
+              alt="DCRXZ"" 
+              width={20}
+              height={20}
+              className="w-5 h-5 max-w-[20px] max-h-[20px] rounded object-cover border border-white/10"
             />
             <span className="text-white font-bold tracking-tight text-sm">
               Darwin Ernest Cruz
