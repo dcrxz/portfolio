@@ -2,7 +2,6 @@ import React from 'react';
 
 export default function Portfolio() {
   return (
-    // BRANDING CONTAINER: Dark mode framework layout
     <div className="min-h-screen bg-neutral-950 text-neutral-100 font-sans antialiased selection:bg-lime-500 selection:text-black">
       
       {/* ──────────────────────────────────────────────────────── */}
@@ -11,7 +10,7 @@ export default function Portfolio() {
       <section className="max-w-5xl mx-auto px-6 pt-24 pb-16 border-b border-neutral-900">
         <header className="space-y-4">
           <p className="text-lime-400 font-mono text-sm tracking-widest uppercase">
-            // LIVE DEPLOYMENT // SYSTEM: ACTIVE
+            LIVE DEPLOYMENT // SYSTEM: ACTIVE
           </p>
           <h1 className="text-5xl md:text-6xl font-black tracking-tight text-white">
             Darwin Ernest Cruz
@@ -40,7 +39,7 @@ export default function Portfolio() {
           <div className="bg-neutral-900/50 p-6 rounded-lg border border-neutral-900 flex flex-col justify-between h-full">
             <div>
               <h3 className="text-xs uppercase tracking-widest font-mono text-neutral-500 mb-4">
-                // ACTIVE ROUTING
+                ACTIVE ROUTING
               </h3>
               <p className="text-sm text-neutral-400">Target Output: High-Volume Direct Response</p>
               <p className="text-sm text-neutral-400">Framework: Agile Systems R&D</p>
@@ -96,14 +95,14 @@ export default function Portfolio() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-4">
-            <div className="text-xs font-mono text-lime-400">// SUB-SYSTEM 01</div>
+            <div className="text-xs font-mono text-lime-400">SUB-SYSTEM 01</div>
             <h3 className="text-2xl font-bold text-white">Human Behavior Engineering</h3>
             <p className="text-neutral-400 leading-relaxed">
               Direct-response advertising isn&apos;t an art project—it&apos;s human behavior engineering. I combine a technical background in IT with behavioral science to build rigorous creative testing loops.
             </p>
           </div>
           <div className="space-y-4">
-            <div className="text-xs font-mono text-lime-400">// SUB-SYSTEM 02</div>
+            <div className="text-xs font-mono text-lime-400">SUB-SYSTEM 02</div>
             <h3 className="text-2xl font-bold text-white">The Production Engine</h3>
             <p className="text-neutral-400 leading-relaxed">
               Applying agile software sprint structures to asset generation, utilizing a synchronized AI matrix to build, test, and kill creative variations before the budget burns.
@@ -158,7 +157,7 @@ export default function Portfolio() {
 
         {/* STATIC AD HOOKS MATRIX */}
         <div className="mt-12 space-y-4">
-          <h3 className="text-sm font-mono text-neutral-400 mb-4">// CHILI CHEWS HOOK MATRIX TESTING</h3>
+          <h3 className="text-sm font-mono text-neutral-400 mb-4">CHILI CHEWS HOOK MATRIX TESTING</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* HOOK VARIATION 1 */}
             <div className="p-5 bg-neutral-900/40 border border-neutral-900 rounded">
