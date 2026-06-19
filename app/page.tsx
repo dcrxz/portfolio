@@ -68,7 +68,7 @@ export default function Portfolio() {
         </section>
 
         {/* ──────────────────────────────────────────────────────── */}
-        {/* SECTION 02: TECHNICAL PROCESS MODULE (3-COLUMN GRID)      */}
+        {/* SECTION 02: TECHNICAL PROCESS MODULE                     */}
         {/* ──────────────────────────────────────────────────────── */}
         <section id="pipeline" className="border-t border-white/10 pt-16 space-y-12">
           
@@ -78,70 +78,133 @@ export default function Portfolio() {
             <p className="text-sm text-neutral-400 max-w-xl">Turning target data arrays into complete social media ad configurations in under 10 minutes.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-neutral-900/30 border border-white/5 p-8 rounded-xl space-y-4 hover:border-white/10 transition-colors">
-              <div className="text-xs font-mono text-[#6bebff]">01 / INGESTION</div>
-              <h3 className="font-bold text-white text-base">The Grabber Module</h3>
-              <p className="text-sm text-neutral-400 leading-relaxed">Python scraping system engineered to automatically extract business parameters and sanitize layout metadata.</p>
+          {/* GRID CONTROLLER: Explicitly sets 1 column on mobile, 3 columns on medium screens up */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch w-full">
+            
+            {/* CARD 01 */}
+            <div className="bg-neutral-900/30 border border-white/5 p-8 rounded-xl flex flex-col justify-between hover:border-white/10 transition-colors h-full">
+              <div className="space-y-4">
+                <div className="text-xs font-mono text-[#6bebff]">01 / INGESTION</div>
+                <h3 className="font-bold text-white text-base">The Grabber Module</h3>
+                <p className="text-sm text-neutral-400 leading-relaxed">Python scraping system engineered to automatically extract business parameters and sanitize layout metadata.</p>
+              </div>
             </div>
             
-            <div className="bg-neutral-900/30 border border-white/5 p-8 rounded-xl space-y-4 hover:border-white/10 transition-colors">
-              <div className="text-xs font-mono text-[#578cd6]">02 / PROCESSING</div>
-              <h3 className="font-bold text-white text-base">The Context Brain</h3>
-              <p className="text-sm text-neutral-400 leading-relaxed">Algorithmic evaluation layer running targeted demographic validation and direct-response angle mapping.</p>
+            {/* CARD 02 */}
+            <div className="bg-neutral-900/30 border border-white/5 p-8 rounded-xl flex flex-col justify-between hover:border-white/10 transition-colors h-full">
+              <div className="space-y-4">
+                <div className="text-xs font-mono text-[#578cd6]">02 / PROCESSING</div>
+                <h3 className="font-bold text-white text-base">The Context Brain</h3>
+                <p className="text-sm text-neutral-400 leading-relaxed">Algorithmic evaluation layer running targeted demographic validation and direct-response angle mapping.</p>
+              </div>
             </div>
             
-            <div className="bg-neutral-900/30 border border-white/5 p-8 rounded-xl space-y-4 hover:border-white/10 transition-colors">
-              <div className="text-xs font-mono text-[#f9cefb]">03 / COMPILATION</div>
-              <h3 className="font-bold text-white text-base">The Production Factory</h3>
-              <p className="text-sm text-neutral-400 leading-relaxed">High-volume generative array outputting clean, synchronized asset variations across cross-platform dimensions.</p>
+            {/* CARD 03 */}
+            <div className="bg-neutral-900/30 border border-white/5 p-8 rounded-xl flex flex-col justify-between hover:border-white/10 transition-colors h-full">
+              <div className="space-y-4">
+                <div className="text-xs font-mono text-[#f9cefb]">03 / COMPILATION</div>
+                <h3 className="font-bold text-white text-base">The Production Factory</h3>
+                <p className="text-sm text-neutral-400 leading-relaxed">High-volume generative array outputting clean, synchronized asset variations across cross-platform dimensions.</p>
+              </div>
             </div>
-          </div>
 
+          </div>
         </section>
 
         {/* ──────────────────────────────────────────────────────── */}
-        {/* SECTION 03: CREATIVE STORAGE GRID (3-COLUMN STRUCTURE)   */}
+        {/* SECTION 03: CREATIVE STORAGE GRID                        */}
         {/* ──────────────────────────────────────────────────────── */}
-        <section id="creative" className="border-t border-white/10 pt-16 space-y-12">
+        <section id="creative" style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '4rem', display: 'block', width: '100%' }}>
           
-          <div className="space-y-2">
-            <div className="text-xs font-mono text-[#f9cefb] tracking-widest uppercase">Verified Deployments</div>
-            <h2 className="text-3xl font-bold tracking-tight text-white">High-Volume Creative Vault</h2>
+          <div style={{ marginBottom: '3rem', textAlign: 'left' }}>
+            <div style={{ fontFamily: 'monospace', fontSize: '0.75rem', color: '#f9cefb', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
+              VERIFIED DEPLOYMENTS
+            </div>
+            <h2 style={{ fontSize: '1.75rem', fontWeight: 'bold', color: '#F5F5F5', letterSpacing: '-0.02em' }}>
+              High-Volume Creative Vault
+            </h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-neutral-900/10 border border-white/10 rounded-xl p-4 space-y-4">
-              <div className="aspect-[9/16] bg-[#050505] rounded-lg overflow-hidden border border-white/5 relative">
-                <video src="/videos/ugc-video-1.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
+          {/* THE GRID FLEX BOX MATRIX */}
+          <div style={{ 
+            display: 'flex', 
+            flexDirection: 'row', 
+            flexWrap: 'wrap', 
+            gap: '1.5rem', 
+            width: '100%', 
+            justifyContent: 'space-between' 
+          }}>
+            
+            {/* COLUMN 01 */}
+            <div style={{ 
+              flex: '1 1 30%', 
+              minWidth: '280px', 
+              backgroundColor: 'rgba(245, 245, 245, 0.03)', 
+              border: '1px solid rgba(255,255,255,0.05)', 
+              borderRadius: '1rem', 
+              padding: '1.5rem', 
+              boxSizing: 'border-box' 
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+                <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#6bebff' }} />
+                <h4 style={{ fontWeight: 'bold', color: '#F5F5F5', fontSize: '1rem', margin: 0 }}>UGC Creative Asset 1</h4>
               </div>
-              <div className="px-1">
-                <h4 className="font-bold text-white text-sm">UGC Creative Asset 1</h4>
-                <p className="text-xs text-neutral-400 mt-1">10-second direct-response vertical video variation loop.</p>
+              {/* LANDSCAPE ASPECT RATIO CONTAINER */}
+              <div style={{ width: '100%', aspectRatio: '16/9', backgroundColor: '#050505', borderRadius: '0.75rem', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', position: 'relative' }}>
+                <video src="/videos/ugc-video-1.mp4" autoPlay muted loop playsInline style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
+              <p style={{ fontSize: '0.75rem', color: '#a3a3a3', marginTop: '1rem', lineHeight: '1.4' }}>
+                10-second direct-response landscape video variation loop.
+              </p>
             </div>
 
-            <div className="bg-neutral-900/10 border border-white/10 rounded-xl p-4 space-y-4">
-              <div className="aspect-[9/16] bg-[#050505] rounded-lg overflow-hidden border border-white/5 relative">
-                <video src="/videos/ugc-video-2.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
+            {/* COLUMN 02 */}
+            <div style={{ 
+              flex: '1 1 30%', 
+              minWidth: '280px', 
+              backgroundColor: 'rgba(245, 245, 245, 0.03)', 
+              border: '1px solid rgba(255,255,255,0.05)', 
+              borderRadius: '1rem', 
+              padding: '1.5rem', 
+              boxSizing: 'border-box' 
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+                <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#578cd6' }} />
+                <h4 style={{ fontWeight: 'bold', color: '#F5F5F5', fontSize: '1rem', margin: 0 }}>UGC Creative Asset 2</h4>
               </div>
-              <div className="px-1">
-                <h4 className="font-bold text-white text-sm">UGC Creative Asset 2</h4>
-                <p className="text-xs text-neutral-400 mt-1">Algorithmic format variation structure tracking audience engagement metrics.</p>
+              {/* LANDSCAPE ASPECT RATIO CONTAINER */}
+              <div style={{ width: '100%', aspectRatio: '16/9', backgroundColor: '#050505', borderRadius: '0.75rem', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', position: 'relative' }}>
+                <video src="/videos/ugc-video-2.mp4" autoPlay muted loop playsInline style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
+              <p style={{ fontSize: '0.75rem', color: '#a3a3a3', marginTop: '1rem', lineHeight: '1.4' }}>
+                Algorithmic format variation structure tracking audience engagement metrics.
+              </p>
             </div>
 
-            <div className="bg-neutral-900/10 border border-white/10 rounded-xl p-4 space-y-4">
-              <div className="aspect-[9/16] bg-[#050505] rounded-lg overflow-hidden border border-white/5 relative">
-                <video src="/videos/product-focus.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
+            {/* COLUMN 03 */}
+            <div style={{ 
+              flex: '1 1 30%', 
+              minWidth: '280px', 
+              backgroundColor: 'rgba(245, 245, 245, 0.03)', 
+              border: '1px solid rgba(255,255,255,0.05)', 
+              borderRadius: '1rem', 
+              padding: '1.5rem', 
+              boxSizing: 'border-box' 
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+                <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#f9cefb' }} />
+                <h4 style={{ fontWeight: 'bold', color: '#F5F5F5', fontSize: '1rem', margin: 0 }}>Macro Product Creative</h4>
               </div>
-              <div className="px-1">
-                <h4 className="font-bold text-white text-sm">Macro Product Creative</h4>
-                <p className="text-xs text-neutral-400 mt-1">Hyper-focused product frame variations mapped straight to user conversion arrays.</p>
+              {/* LANDSCAPE ASPECT RATIO CONTAINER */}
+              <div style={{ width: '100%', aspectRatio: '16/9', backgroundColor: '#050505', borderRadius: '0.75rem', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', position: 'relative' }}>
+                <video src="/videos/product-focus.mp4" autoPlay muted loop playsInline style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
+              <p style={{ fontSize: '0.75rem', color: '#a3a3a3', marginTop: '1rem', lineHeight: '1.4' }}>
+                Hyper-focused product frame variations mapped straight to user conversion arrays.
+              </p>
             </div>
+
           </div>
-
         </section>
 
         {/* ──────────────────────────────────────────────────────── */}
