@@ -4,15 +4,23 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-[#050505] text-[#F5F5F5] antialiased selection:bg-[#6bebff] selection:text-[#050505] font-sans">
       
-      {/* FIXED REALTIME-STYLE HEADER HUD */}
-      <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-[#050505]/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
-        <div className="max-w-6xl mx-auto flex items-center justify-between">
+      {/* FIXED REALTIME-STYLE HEADER HUD                          */}
+      {/* ──────────────────────────────────────────────────────── */}
+      <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-[#050505]/90 backdrop-blur-md border-b border-white/10 px-6 h-[40px] flex items-center transition-all duration-200">
+        <div className="max-w-6xl mx-auto w-full flex items-center justify-between">
           
-          {/* BRAND AXIS */}
+          {/* BRAND AXIS: IMAGE LOGO INTEGRATION */}
           <div className="flex items-center space-x-3 cursor-pointer">
-            <div className="w-6 h-6 rounded bg-[#6bebff] flex items-center justify-center text-[#050505] font-bold text-xs">
-              D
-            </div>
+            {/* Logo Image Block - Sized symmetrically to sit inside the 40px container height */}
+            <img 
+              src="/portfolio/images/4x4-logo.png" 
+              alt="CRXZ System Logo" 
+              className="w-5 h-5 rounded object-cover border border-white/10"
+              onError={(e) => {
+                // Safe absolute path fallback if local basePath asset routing drops
+                e.currentTarget.src = "/images/4x4-logo.png";
+              }}
+            />
             <span className="text-white font-bold tracking-tight text-sm">
               Darwin Ernest Cruz
             </span>
@@ -27,10 +35,10 @@ export default function Portfolio() {
               <a href="#metrics" className="hover:text-white transition-colors">Metrics</a>
             </div>
             
-            {/* CALL TO ACTION */}
+            {/* CALL TO ACTION BUTTON */}
             <a 
               href="#contact" 
-              className="bg-[#6bebff] text-[#050505] px-4 py-2 rounded text-xs font-bold hover:bg-white transition-colors"
+              className="bg-[#6bebff] text-[#050505] px-3 py-1 rounded text-xs font-bold hover:bg-white transition-colors"
             >
               Connect
             </a>
