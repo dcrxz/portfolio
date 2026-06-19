@@ -38,12 +38,13 @@ export const metadata: Metadata = {
 /* ──────────────────────────────────────────────────────── */
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en" className={`${outfit.variable} ${spaceMono.variable} ${bebasNeue.variable} antialiased`}>
-      <body className="bg-[#050505] m-0 p-0 top-0 left-0">
+    // ADD h-full AND overflow-x-hidden HERE
+    <html lang="en" className="h-full overflow-x-hidden">
+      <body className="bg-[#050505] m-0 p-0 antialiased min-h-full relative">
         {children}
       </body>
     </html>

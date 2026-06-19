@@ -13,7 +13,7 @@ export default function Portfolio() {
           {/* BRAND AXIS: IMAGE LOGO INTEGRATION */}
           <div className="flex items-center space-x-3 cursor-pointer">
             <img 
-              src="/portfolio/images/4x4-logo.png" 
+              src="/images/4x4-logo.png" 
               alt="DCRXZ"
               width={20}
               height={20}
@@ -26,7 +26,7 @@ export default function Portfolio() {
 
           {/* STATIC NAVIGATION SECTION MAP */}
           <div className="flex items-center text-xs font-medium tracking-wide">
-            <div className="hidden md:flex items-center text-neutral-400">
+            <div className="flex items-center space-x-4 text-neutral-400">
               
               <a href="#overview" className="hover:text-white transition-colors">Overview</a>
               <span className="px-3 text-neutral-700">|</span>
@@ -222,7 +222,7 @@ export default function Portfolio() {
           {/* COLUMN B: PROFILE IMAGE BLOCK */}
           <div className="w-full max-w-[380px] mx-auto md:ml-auto aspect-square relative overflow-hidden rounded-xl border border-white/10 bg-neutral-900/10">
             <img 
-              src="/portfolio/images/profile-image.jpg" 
+              src="/images/profile-image.jpg" 
               alt="Darwin Ernest Cruz Portrait" 
               className="absolute inset-0 w-full h-full object-cover grayscale brightness-95"
             />
