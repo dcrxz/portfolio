@@ -55,18 +55,9 @@ export default function Portfolio() {
         {/* ──────────────────────────────────────────────────────── */}
         {/* SECTION 01: HERO MODULE (1-COLUMN STRUCTURE)             */}
         {/* ──────────────────────────────────────────────────────── */}
-        <section id="overview" className="max-w-3xl mx-auto space-y-6 text-center pt-8">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
-            Engineering high-volume, behavior-mapped creatives.
-          </h1>
-          <p className="text-lg text-neutral-400 max-w-xl mx-auto leading-relaxed">
-            Lead Specialist in Learning Innovation &amp; Technology matching technical infrastructure with learning science to build automated ad asset generation matrices.
-          </p>
-          <div className="flex items-center justify-center space-x-4 pt-2">
-            <a href="#pipeline" className="border border-white/10 px-5 py-2.5 rounded text-sm font-semibold hover:bg-white/5 transition-colors">
-              View Architecture
-            </a>
-          </div>
+        <section className="max-w-3xl mx-auto text-center space-y-6 py-16">
+          <h2 className="text-4xl font-bold text-white">Engineering high-volume, behavior-mapped creatives.</h2>
+          <p className="text-neutral-400 max-w-xl mx-auto">Lead Specialist in Learning Innovation &amp; Technology matching technical infrastructure with learning science to build automated ad asset generation matrices.</p>
         </section>
 
         {/* ──────────────────────────────────────────────────────── */}
