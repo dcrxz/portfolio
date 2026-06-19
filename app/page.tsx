@@ -49,12 +49,14 @@ export default function Portfolio() {
       {/* ──────────────────────────────────────────────────────── */}
       {/* MAIN CONTAINER LAYOUT: SITE FRAME MATRIX                 */}
       {/* ──────────────────────────────────────────────────────── */}
-      <main className="max-w-6xl mx-auto px-6 pt-36 pb-24 space-y-20">
+      {/* Tweak: pt-16 drops the container right below the 40px nav bar cleanly without crashing */}
+      <main className="max-w-6xl mx-auto px-6 pt-16 pb-24 space-y-20">
 
         {/* ──────────────────────────────────────────────────────── */}
         {/* SECTION 01: HERO MODULE (CENTERED 1-COLUMN)              */}
         {/* ──────────────────────────────────────────────────────── */}
-        <section id="overview" className="max-w-3xl mx-auto text-center space-y-6 py-16">
+        {/* Tweak: py-12 replaces the layout spacing cleanly so it can't leak past the header */}
+        <section id="overview" className="max-w-3xl mx-auto text-center space-y-6 py-12">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
             Engineering high-volume, behavior-mapped creatives.
           </h1>

@@ -29,10 +29,11 @@ const config: Config = {
         '4xl': '3.158rem',
         '5xl': '4.210rem',
       },
-      // FONT STACK ROUTING: Your custom family assignments
+      // FONT STACK ROUTING: Tied exactly to your layout.tsx variables
       fontFamily: {
-        heading: ['var(--font-montserrat)', 'Montserrat', 'sans-serif'],
-        body: ['var(--font-montserrat-alternates)', 'Montserrat Alternates', 'sans-serif'],
+        sans: ['var(--font-sans)', 'sans-serif'],   // Renders your clean "Outfit" font
+        mono: ['var(--font-mono)', 'monospace'],    // Renders your technical "Space Mono"
+        bebas: ['var(--font-bebas)', 'sans-serif'], // Gives you the striking "Bebas Neue" utility class
       },
       // WEIGHT MATRIX: Text thickness configurations
       fontWeight: {
