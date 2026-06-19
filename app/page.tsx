@@ -41,12 +41,12 @@ export default function Portfolio() {
 
               <a href="#metrics" className="hover:text-white transition-colors">Metrics</a>
               <span className="px-3 text-neutral-700">|</span>
-              
+
               <a href="#contact" className="hover:text-white transition-colors mr-4">Connect</a>
           </div>
         </div>
       </nav>
-
+      
       {/* ──────────────────────────────────────────────────────── */}
       {/* MAIN CONTAINER LAYOUT: SITE FRAME MATRIX                 */}
       {/* ──────────────────────────────────────────────────────── */}
