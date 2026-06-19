@@ -5,13 +5,13 @@ export default function Portfolio() {
     <div className="min-h-screen bg-[#050505] text-[#F5F5F5] antialiased selection:bg-[#6bebff] selection:text-[#050505] font-sans">
       
       {/* FIXED REALTIME-STYLE HEADER HUD */}
-      <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-[#050505]/90 backdrop-blur-md border-b border-white/10 px-6 h-[40px] flex items-center transition-all duration-200">
+      <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-[#050505] border-b border-white/10 px-6 h-[40px] flex items-center">
         <div className="max-w-6xl mx-auto w-full flex items-center justify-between">
           
           {/* BRAND AXIS: IMAGE LOGO INTEGRATION */}
           <div className="flex items-center space-x-3 cursor-pointer">
             <img 
-              src="/portfolio/images/4x4-logo.png" 
+              src="/images/4x4-logo.png" 
               alt="CRXZ System Logo" 
               className="w-5 h-5 rounded object-cover border border-white/10"
             />
@@ -42,7 +42,7 @@ export default function Portfolio() {
       </nav>
 
       {/* MAIN MODULAR CANVAS GRID */}
-      <main className="max-w-6xl mx-auto px-6 pt-32 pb-24 space-y-20">
+      <main className="max-w-6xl mx-auto px-6 pt-36 pb-24 space-y-20">
 
         {/* SECTION 01: HERO MODULE */}
         <section id="overview" className="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-8">
