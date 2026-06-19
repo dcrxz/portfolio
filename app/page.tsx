@@ -7,43 +7,81 @@ export default function Portfolio() {
       {/* ──────────────────────────────────────────────────────── */}
       {/* GLOBAL HEADER PANEL                                      */}
       {/* ──────────────────────────────────────────────────────── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-[#050505] border-b border-white/10 px-6 h-[40px] flex items-center">
-        <div className="max-w-6xl mx-auto w-full flex items-center justify-between">
-          
-          <div className="flex items-center space-x-3 cursor-pointer">
+      {/* THE TOP NAVIGATION BAR CONTAINER */}
+    <nav style={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '100%',
+      zIndex: 100,
+      backgroundColor: 'rgba(5, 5, 5, 0.8)',
+      backdropFilter: 'blur(8px)',
+      borderBottom: '1px solid rgba(255, 255, 255, 0.05)'
+    }}>
+
+      {/* THE INNER CONTENT ALIGNMENT LAYER: Forces the links to align with the page columns */}
+      <div style={{
+        width: '100%',
+        maxWidth: '1440px',      // Matches layout.tsx exactly
+        margin: '0 auto',        // Centers the navigation row block
+        paddingLeft: '1.25rem',  // Matches layout.tsx exactly
+        paddingRight: '1.25rem', // Matches layout.tsx exactly
+        height: '4rem',          // Uniform height layout track
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between', // Splits logo/name to left, nav links to right
+        boxSizing: 'border-box'
+      }}>
+
+        {/* LOGO / IDENTITY BLOCK */}
+        <a href="#overview" style={{ 
+          display: 'flex', 
+          alignItems: 'center', 
+          gap: '0.75rem',
+          color: '#F5F5F5', 
+          fontWeight: 'bold', 
+          textDecoration: 'none', 
+          fontSize: '0.875rem' 
+        }}>
+          {/* THE LOGO ICON WRAPPER: Solid Minimalist Background */}
+          <div style={{ 
+            width: '1.5rem', 
+            height: '1.5rem', 
+            borderRadius: '0.375rem',          // Gives it a clean, modern rounded corner
+            backgroundColor: '#171717',        // Solid neutral dark grey background
+            border: '1px solid rgba(255, 255, 255, 0.08)', // Crisp, subtle structural outline
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            overflow: 'hidden'
+          }}>
             <img 
-              src="/images/4x4-logo.png" 
-              alt="DCRXZ"
-              width={20}
-              height={20}
-              className="w-5 h-5 max-w-[20px] max-h-[20px] rounded object-cover border border-white/10"
+              src="/images/logo.png" 
+              alt="Logo" 
+              style={{ 
+                width: '100%', 
+                height: '100%', 
+                objectFit: 'cover',             // Fills the square bounds neatly
+                display: 'block'
+              }} 
             />
-            <span className="text-white font-bold tracking-tight text-sm">
-              Darwin Ernest Cruz
-            </span>
           </div>
+          <span>Darwin Ernest Cruz</span>
+        </a>
 
-          {/* STATIC NAVIGATION SECTION MAP */}
-          <div className="flex items-center text-xs font-medium tracking-wide">
-            <div className="flex items-center text-neutral-400">
-              <a href="#overview" className="hover:text-white transition-colors no-underline">&nbsp;&nbsp;Overview&nbsp;&nbsp;</a>
-              <span className="text-neutral-700 select-none">|</span>
-
-              <a href="#pipeline" className="hover:text-white transition-colors no-underline">&nbsp;&nbsp;Pipelines&nbsp;&nbsp;</a>
-              <span className="text-neutral-700 select-none">|</span>
-
-              <a href="#creative" className="hover:text-white transition-colors no-underline">&nbsp;&nbsp;Creative&nbsp;&nbsp;</a>
-              <span className="text-neutral-700 select-none">|</span>
-
-              <a href="#metrics" className="hover:text-white transition-colors no-underline">&nbsp;&nbsp;Metrics&nbsp;&nbsp;</a>
-              <span className="text-neutral-700 select-none">|</span>
-
-              <a href="#contact" className="hover:text-white transition-colors mr-2 no-underline">&nbsp;&nbsp;Connect&nbsp;&nbsp;</a>
-            </div>
-          </div>
-
+        {/* LINK MODULE DECK */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontFamily: 'monospace', fontSize: '0.75rem' }}>
+          <a href="#overview" style={{ color: '#a3a3a3', textDecoration: 'none' }}>Overview</a>
+          <span style={{ color: '#262626' }}>|</span>
+          <a href="#pipeline" style={{ color: '#a3a3a3', textDecoration: 'none' }}>Pipelines</a>
+          <span style={{ color: '#262626' }}>|</span>
+          <a href="#creative" style={{ color: '#a3a3a3', textDecoration: 'none' }}>Creative</a>
+          <span style={{ color: '#262626' }}>|</span>
+          <a href="#contact" style={{ color: '#a3a3a3', textDecoration: 'none' }}>Connect</a>
         </div>
-      </nav>
+
+      </div>
+    </nav>
       
       {/* ──────────────────────────────────────────────────────── */}
       {/* MAIN CONTAINER LAYOUT                                    */}

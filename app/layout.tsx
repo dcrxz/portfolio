@@ -33,12 +33,32 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-full overflow-x-hidden m-0 p-0">
-      <body className={`${outfit.variable} ${spaceMono.variable} ${bebasNeue.variable} bg-[#050505] m-0 p-0 antialiased min-h-full relative overflow-x-hidden`}>
-        {children}
+    <html lang="en">
+      <body style={{ 
+        backgroundColor: '#050505', 
+        color: '#F5F5F5', 
+        margin: 0,
+        // Add these explicit system fallbacks to guarantee a modern sans-serif look everywhere
+        fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
+      }}>
+        
+        {/* THE MASTER GLOBAL CONTENT WRAPPER */}
+        <div style={{
+          width: '100%',
+          maxWidth: '1440px',      // The max lane width from the Realtime Colors framework
+          margin: '0 auto',        // Automatically centers the entire site on desktop screens
+          paddingLeft: '1.5rem',     // Defensive left cushion for smaller screens/tablets
+          paddingRight: '1.5rem',    // Defensive right cushion for smaller screens/tablets
+          boxSizing: 'border-box'
+        }}>
+          
+          {children}
+          
+        </div>
+
       </body>
     </html>
   );
