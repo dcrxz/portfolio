@@ -13,10 +13,6 @@ export default function Portfolio() {
           
           {/* BRAND AXIS: IMAGE LOGO INTEGRATION */}
           <div className="flex items-center space-x-3 cursor-pointer">
-            {/* 
-              Sizing Tweak: width={20} height={20} combined with max-w/max-h ensures
-              the logo is completely locked down and can never expand or inflate.
-            */}
             <img 
               src="/portfolio/images/4x4-logo.png" 
               alt="DCRXZ"
@@ -29,16 +25,27 @@ export default function Portfolio() {
             </span>
           </div>
 
-          {/* NAVIGATION LINKS */}
-          <div className="flex items-center space-x-8 text-xs font-medium tracking-wide">
-            <div className="hidden md:flex space-x-6 text-neutral-400">
+          {/* STATIC NAVIGATION SECTION MAP */}
+          {/* Spacing Tweak: items-center and flex ensure links and custom dividers align flat */}
+          <div className="flex items-center text-xs font-medium tracking-wide">
+            <div className="hidden md:flex items-center text-neutral-400">
+              
               <a href="#overview" className="hover:text-white transition-colors">Overview</a>
+              <span className="px-3 text-neutral-700">|</span>
+              
               <a href="#pipeline" className="hover:text-white transition-colors">Pipelines</a>
+              <span className="px-3 text-neutral-700">|</span>
+              
               <a href="#creative" className="hover:text-white transition-colors">Creative</a>
+              <span className="px-3 text-neutral-700">|</span>
+              
               <a href="#metrics" className="hover:text-white transition-colors">Metrics</a>
+              <span className="px-3 text-neutral-700">|</span>
+              
+              <a href="#contact" className="hover:text-white transition-colors mr-4">Connect</a>
             </div>
             
-            {/* CALL TO ACTION BUTTON */}
+            {/* ACTION TRIGGER INTERFACE */}
             <a 
               href="#contact" 
               className="bg-[#6bebff] text-[#050505] px-3 py-1 rounded text-xs font-bold hover:bg-white transition-colors"
@@ -230,7 +237,7 @@ export default function Portfolio() {
               </a>
             </div>
             <p className="text-xs font-mono text-neutral-600 pt-6">
-              © 2026 CRXZ SYSTEMS INC // ENGINE ONLINE
+              © 2026 Darwin Ernest Cruz | Portfolio v1.0
             </p>
           </div>
 
