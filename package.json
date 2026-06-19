@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npx serve@latest out",
     "lint": "eslint",
-    "deploy": "git pull origin main --rebase && npm run build && git add . && git commit -m 'Portfolio Update' && git push origin main"
+    "test-prod": "npm run build && npm run start",
+    "deploy": "git pull origin main --rebase --autostash && npm run build && git add -A && git commit -m 'site: automated comprehensive production update' && git push origin main"
   },
   "dependencies": {
     "framer-motion": "^12.38.0",
