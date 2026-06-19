@@ -2,16 +2,14 @@ import React from 'react';
 
 export default function Portfolio() {
   return (
-    // Added overflow-hidden to stop any image files from expanding past the window canvas
     <div className="min-h-screen bg-[#050505] text-[#F5F5F5] antialiased selection:bg-[#6bebff] selection:text-[#050505] font-sans overflow-hidden">
       
       {/* ──────────────────────────────────────────────────────── */}
-      {/* GLOBAL HEADER PANEL: SOLID & FIXED CEILING BOUNDARY      */}
+      {/* GLOBAL HEADER PANEL                                      */}
       {/* ──────────────────────────────────────────────────────── */}
       <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-[#050505] border-b border-white/10 px-6 h-[40px] flex items-center">
         <div className="max-w-6xl mx-auto w-full flex items-center justify-between">
           
-          {/* BRAND AXIS: IMAGE LOGO INTEGRATION */}
           <div className="flex items-center space-x-3 cursor-pointer">
             <img 
               src="/images/4x4-logo.png" 
@@ -25,22 +23,21 @@ export default function Portfolio() {
             </span>
           </div>
 
-          {/* STATIC NAVIGATION SECTION MAP */}
           <div className="flex items-center text-xs font-medium tracking-wide">
-            <div className="flex items-center space-x-4 text-neutral-400">
-              <a href="#overview" className="hover:text-white transition-colors">Overview</a>
-              <span className="px-3 text-neutral-700">|</span>
+            <div className="flex items-center text-neutral-400">
+              <a href="#overview" className="px-3 hover:text-white transition-colors">Overview</a>
+              <span className="text-neutral-700">|</span>
 
-              <a href="#pipeline" className="hover:text-white transition-colors">Pipelines</a>
-              <span className="px-3 text-neutral-700">|</span>
+              <a href="#pipeline" className="px-3 hover:text-white transition-colors">Pipelines</a>
+              <span className="text-neutral-700">|</span>
 
-              <a href="#creative" className="hover:text-white transition-colors">Creative</a>
-              <span className="px-3 text-neutral-700">|</span>
+              <a href="#creative" className="px-3 hover:text-white transition-colors">Creative</a>
+              <span className="text-neutral-700">|</span>
 
-              <a href="#metrics" className="hover:text-white transition-colors">Metrics</a>
-              <span className="px-3 text-neutral-700">|</span>
+              <a href="#metrics" className="px-3 hover:text-white transition-colors">Metrics</a>
+              <span className="text-neutral-700">|</span>
 
-              <a href="#contact" className="hover:text-white transition-colors mr-4">Connect</a>
+              <a href="#contact" className="px-3 hover:text-white transition-colors mr-2">Connect</a>
             </div>
           </div>
 
@@ -48,15 +45,13 @@ export default function Portfolio() {
       </nav>
       
       {/* ──────────────────────────────────────────────────────── */}
-      {/* MAIN CONTAINER LAYOUT: SITE FRAME MATRIX                 */}
+      {/* MAIN CONTAINER LAYOUT                                    */}
       {/* ──────────────────────────────────────────────────────── */}
-      {/* Tweak: pt-16 drops the container right below the 40px nav bar cleanly without crashing */}
       <main className="max-w-6xl mx-auto px-6 pt-16 pb-24 space-y-20">
 
         {/* ──────────────────────────────────────────────────────── */}
         {/* SECTION 01: HERO MODULE (CENTERED 1-COLUMN)              */}
         {/* ──────────────────────────────────────────────────────── */}
-        {/* Tweak: py-12 replaces the layout spacing cleanly so it can't leak past the header */}
         <section id="overview" className="max-w-3xl mx-auto text-center space-y-6 py-12">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
             Engineering high-volume, behavior-mapped creatives.
@@ -83,19 +78,18 @@ export default function Portfolio() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* CARD 01 */}
             <div className="bg-neutral-900/30 border border-white/5 p-8 rounded-xl space-y-4 hover:border-white/10 transition-colors">
               <div className="text-xs font-mono text-[#6bebff]">01 / INGESTION</div>
               <h3 className="font-bold text-white text-base">The Grabber Module</h3>
               <p className="text-sm text-neutral-400 leading-relaxed">Python scraping system engineered to automatically extract business parameters and sanitize layout metadata.</p>
             </div>
-            {/* CARD 02 */}
+            
             <div className="bg-neutral-900/30 border border-white/5 p-8 rounded-xl space-y-4 hover:border-white/10 transition-colors">
               <div className="text-xs font-mono text-[#578cd6]">02 / PROCESSING</div>
               <h3 className="font-bold text-white text-base">The Context Brain</h3>
               <p className="text-sm text-neutral-400 leading-relaxed">Algorithmic evaluation layer running targeted demographic validation and direct-response angle mapping.</p>
             </div>
-            {/* CARD 03 */}
+            
             <div className="bg-neutral-900/30 border border-white/5 p-8 rounded-xl space-y-4 hover:border-white/10 transition-colors">
               <div className="text-xs font-mono text-[#f9cefb]">03 / COMPILATION</div>
               <h3 className="font-bold text-white text-base">The Production Factory</h3>
@@ -116,7 +110,6 @@ export default function Portfolio() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* VIDEO COLUMN 01 */}
             <div className="bg-neutral-900/10 border border-white/10 rounded-xl p-4 space-y-4">
               <div className="aspect-[9/16] bg-[#050505] rounded-lg overflow-hidden border border-white/5 relative">
                 <video src="/videos/ugc-video-1.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
@@ -127,7 +120,6 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* VIDEO COLUMN 02 */}
             <div className="bg-neutral-900/10 border border-white/10 rounded-xl p-4 space-y-4">
               <div className="aspect-[9/16] bg-[#050505] rounded-lg overflow-hidden border border-white/5 relative">
                 <video src="/videos/ugc-video-2.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
@@ -138,7 +130,6 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* VIDEO COLUMN 03 */}
             <div className="bg-neutral-900/10 border border-white/10 rounded-xl p-4 space-y-4">
               <div className="aspect-[9/16] bg-[#050505] rounded-lg overflow-hidden border border-white/5 relative">
                 <video src="/videos/product-focus.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
@@ -202,7 +193,6 @@ export default function Portfolio() {
         {/* ──────────────────────────────────────────────────────── */}
         <footer id="contact" className="border-t border-white/10 pt-16 grid grid-cols-1 md:grid-cols-12 gap-12 items-center text-left">
           
-          {/* COLUMN A: CONNECT INTERFACES (Spans 7 out of 12 columns) */}
           <div className="md:col-span-7 space-y-6">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tight text-white">Let&apos;s Build the Machine</h2>
@@ -221,7 +211,6 @@ export default function Portfolio() {
             </p>
           </div>
 
-          {/* COLUMN B: PROFILE IMAGE BLOCK (Spans 5 out of 12 columns) */}
           <div className="md:col-span-5 w-full max-w-[340px] mx-auto md:ml-auto aspect-square relative overflow-hidden rounded-xl border border-white/5 bg-neutral-900/10 group">
             <img 
               src="/images/profile-image.jpg" 
