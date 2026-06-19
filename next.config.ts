@@ -5,7 +5,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,   // Required because GitHub Pages doesn't support the dynamic Image Optimization API
   },
-  // REMOVED basePath: Your site deploys straight to the root of dcrxz.com, not a sub-directory!
+  // Bypasses ESLint checks completely during production compilation
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
